@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T12:39:00Z"
+updated_at: "2026-09-17T12:47:00Z"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -16,13 +16,7 @@ items:
     roadmap_priority: primary
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-competitors"
     dependencies: []
-    objective: "Build a dated public-source map of Russian freelance/B2B service marketplaces, AI automation studios, agent platforms and managed-service substitutes relevant to machine-executed outcomes."
-    acceptance_criteria:
-      - "Uses current public sources with source dates and distinguishes fact from hypothesis."
-      - "Covers at least the major substitute categories named by AW-010."
-      - "Records pricing/packaging/acceptance mechanisms where publicly evidenced."
-      - "Does not rank or declare a winning wedge before the full AW-010 gate evidence exists."
-    executor_scope: "May use public web research and write privacy-safe repository research artifacts. No contact with companies or people."
+    executor_scope: "Public-source research only; no contact with companies or people."
 
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
@@ -34,13 +28,7 @@ items:
     roadmap_priority: primary
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-competitors"
     dependencies: []
-    objective: "Collect the first 10–15 concrete public examples of paid tasks/services/substitutes across candidate job families, including observable price/packaging and acceptance signals where available."
-    acceptance_criteria:
-      - "At least 10 concrete examples from more than one candidate job family."
-      - "Every example has a source and observation date."
-      - "Unknown price or acceptance remains unknown rather than inferred."
-      - "No example is treated as buyer interview or willingness-to-pay proof for Arvectum Work."
-    executor_scope: "Public-source evidence only; may create structured tables/notes and cross-review them."
+    executor_scope: "Public-source evidence only."
 
   - order: 30
     task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
@@ -54,18 +42,12 @@ items:
     dependencies:
       - AW-010-A-MARKET-MAP
       - AW-010-B-PAID-TASK-SAMPLE
-    objective: "Extend the evidence set to 30+ public examples and summarize observed pricing, packaging, acceptance and Russia-specific constraints without claiming stage GO."
-    acceptance_criteria:
-      - "30+ public task/deal/substitute examples total."
-      - "Observed patterns and counterexamples are separated from interpretation."
-      - "At least two plausible wedges may be identified as hypotheses, not selected as product decisions."
-      - "Unresolved legal/payment questions are explicit."
-    executor_scope: "May synthesize public evidence and prepare an AW-010 decision packet; AW-010 GO/PIVOT/STOP remains REVIEW/Owner-product judgment."
+    executor_scope: "Public evidence synthesis only; stage judgment remains REVIEW."
 
   - order: 40
     task_id: AW-020-A-BUYER-SEED-LIST
     title: "Buyer archetype and interview-candidate seed list"
-    status: ready
+    status: in_progress
     authority: AUTO
     independent: true
     auto_merge: true
@@ -83,20 +65,14 @@ items:
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
     title: "Discovery interview and evidence capture kit"
-    status: in_progress
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
     roadmap_priority: parallel
     source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
     dependencies: []
-    objective: "Turn the canonical interview protocol into a reusable interview note template, evidence-strength rubric and privacy-safe task reconstruction form."
-    acceptance_criteria:
-      - "Preserves recent-task reconstruction rather than leading with AI enthusiasm."
-      - "Captures current workaround, cost/price anchor, acceptance owner, recurrence, data constraints and buying path."
-      - "Separates stated opinion from concrete behavior and paid-pilot evidence."
-      - "Contains no fabricated customer evidence."
-    executor_scope: "May create templates/checklists and improve repository documentation only."
+    executor_scope: "Templates/checklists only; no fabricated customer evidence."
 
   - order: 60
     task_id: AW-020-C-REAL-INTERVIEWS
@@ -125,7 +101,6 @@ items:
     dependencies:
       - AW-020-C-REAL-INTERVIEWS
     blocker: "Requires genuine interview notes/evidence from real buyers."
-    objective: "Normalize real interview evidence, identify repeated jobs/acceptance/cost patterns and prepare an AW-020 decision packet without self-approving the stage."
     executor_scope: "May analyze real supplied evidence and prepare recommendations. AW-020 GO/PIVOT/STOP remains REVIEW."
 
   - order: 80
