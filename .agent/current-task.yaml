@@ -15,8 +15,11 @@ completed:
   - "AW-010 public market evidence baseline merged."
   - "AW-020 interview kit, seed list, synthetic demo and flow-management prototype merged."
   - "Product Decision 001: managed machine-work streams accepted."
-  - "Initial vacancy-function scan completed on 2026-09-17 across hh.ru, Rabota.ru and Zarplata.ru public evidence."
-current: "AW-020-C1 vacancy-first Discovery is now primary. Initial clusters: primary documents/1C reconciliation; logistics document closure; product/catalog data validation; structured order processing."
+  - "Product Decision 002: vacancy-first Discovery accepted; broad interviews deferred."
+  - "Initial vacancy-function scan merged via PR #16."
+  - "Vacancy corpus tranche 01 prepared: 34 public observations across hh.ru, Rabota.ru, Zarplata.ru and SuperJob."
+  - "Top-3 synthetic commercial scenarios prepared for primary docs/1C, logistics document closure and product/catalog data."
+current: "AW-020-C1 corpus progress: 34/100 observations and 4/5 target public sources represented. Next need additional source(s), exact vacancy-level records, deduplication and volume clues."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -25,18 +28,18 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "0f77498e1cc171dea600fc44b68d162bb84287c8"
+last_verified_commit: "453a3446efe2e418fcca96610da7659df7ceafec"
 test_results:
-  - "Initial public evidence shows recurring salaries around 80-150k RUB for multiple document/1C/reconciliation functions, with higher bands in tender roles."
-  - "Vacancies are treated as labor-budget proxy only, not willingness-to-pay evidence."
-  - "Role-level replacement claims are prohibited; analysis decomposes automatable flow from exceptions, judgment, communication and accountability."
-  - "No outreach, customer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-17T15:57:00Z"
-resume_instruction: "Continue AW-020-C1 using current public vacancy sources. Expand corpus toward >=100 records, atomize duties, avoid duplicates, record source freshness and salary where visible, and update function clusters. Prioritize evidence for primary docs/1C, logistics document closure, product/catalog data and structured order processing. Do not contact employers. Focused buyer validation remains blocked until the corpus narrows top candidates."
+  - "First tranche shows repeated paid functions around primary documents/1C, logistics closure, order/data processing, document routing, catalog validation and tender ops."
+  - "Top-3 economics deliberately allow owned automation to beat Work at stable high volume; Work is modeled as the middle-volume/variable-load option."
+  - "Synthetic examples are labeled as modeling only, not price offers or validated payback."
+  - "No outreach, employer contact, vacancy application or commercial commitment occurred."
+updated_at: "2026-09-17T16:08:00Z"
+resume_instruction: "Continue AW-020-C1. Expand corpus from 34 toward >=100 current observations, add at least one more accessible public source, prefer exact vacancy-level records over broad search counts, deduplicate employers/roles, and capture any volume clues. Update top-3 economics only when new evidence materially changes assumptions. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260917-01
-  branch: discovery/aw-020-vacancy-function-scan
-  base_commit: "0f77498e1cc171dea600fc44b68d162bb84287c8"
+  execution_id: AW-020-C1-20260917-02
+  branch: discovery/aw-020-top3-commercial-scenarios
+  base_commit: "453a3446efe2e418fcca96610da7659df7ceafec"
   lease_until: null
   manual_override: true
