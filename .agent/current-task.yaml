@@ -11,7 +11,7 @@ completed:
   - "AW-010-A/B/C public market evidence merged to main."
   - "AW-020-B interview/evidence kit merged via PR #8 at 23d26c25271756d8b0521d89df3c8018940847df."
   - "AW-020-A public buyer discovery seed list merged via PR #9 at ad0532fba2a9a7f8fc416b55ebd8f065fb294b3e."
-current: null
+current: "AW-020-C first-five recruitment campaign is prepared in docs/discovery/AW-020-C-FIRST-FIVE-INTERVIEW-CAMPAIGN-PROPOSAL.md but OUTBOUND NOT AUTHORIZED."
 pending:
   - AW-020-C-REAL-INTERVIEWS
   - AW-020-D-INTERVIEW-SYNTHESIS
@@ -23,9 +23,10 @@ last_verified_commit: "ad0532fba2a9a7f8fc416b55ebd8f065fb294b3e"
 test_results:
   - "AW-020-A task-level acceptance: PASS for preparation only — 12 organizations, 3 archetypes, public business data only, no outreach."
   - "AW-020-B task-level acceptance: PASS for preparation only — interview/evidence kit is canonical on main."
-  - "No real buyer interview, willingness-to-pay, paid pilot, acceptance, revenue or repeat-demand evidence exists yet."
-updated_at: "2026-09-17T12:52:00Z"
-resume_instruction: "Reconcile canonical queue. AW-020-C is the next roadmap item and is HUMAN. Do not synthesize interviews or send outreach without an explicitly approved campaign. AW-020-D and all later gates remain blocked until genuine buyer evidence exists. If no later independent AUTO item is canonically admitted, report NO PRODUCTIVE PROGRESS and the HUMAN blocker."
+  - "AW-020-C bounded first-five campaign proposal prepared: five targets, max 10 messages, one follow-up, suppression rules and no-commercial-commitment boundary."
+  - "No outreach sent and no real buyer interview, willingness-to-pay, paid pilot, acceptance, revenue or repeat-demand evidence exists yet."
+updated_at: "2026-09-17T12:55:00Z"
+resume_instruction: "Reconcile canonical queue. AW-020-C is HUMAN. A bounded first-five campaign proposal exists, but do not send anything until an authorized Principal explicitly approves its targets, message class, cadence, 10-message cap, suppression rules, commitment boundary and sending account/channel. AW-020-D and all later gates remain blocked until genuine buyer evidence exists. If no later independent AUTO item is canonically admitted, report NO PRODUCTIVE PROGRESS and the HUMAN blocker."
 execution:
   claimed_by: null
   execution_id: null
