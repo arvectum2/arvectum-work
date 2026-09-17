@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T11:35:00Z"
+updated_at: "2026-09-17T12:27:00Z"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -9,7 +9,7 @@ items:
   - order: 10
     task_id: AW-010-A-MARKET-MAP
     title: "Russia market and substitute map"
-    status: ready
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
@@ -27,7 +27,7 @@ items:
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
     title: "Public paid-task and substitute examples — first tranche"
-    status: ready
+    status: in_progress
     authority: AUTO
     independent: true
     auto_merge: true
