@@ -1,0 +1,7 @@
+requested_item_id,supplier,supplier_item_name,quantity,unit,unit_price_net,vat_rate,delivery_days,is_analog,confidence,source_ref
+RQ-001,Поставщик А,Автоматический выключатель AX-16 16A,20,шт,1240.00,20%,7,no,high,DOC-A:p2:r4
+RQ-001,Поставщик В,Выключатель модульный BX16,20,шт,1190.00,20%,14,yes,medium,DOC-B:sheet1:r18
+RQ-002,Поставщик А,Контактор KM-25,8,шт,3870.00,20%,5,no,high,DOC-A:p2:r9
+RQ-002,Поставщик Г,Контактор C25-230,8,шт,3610.00,AMBIGUOUS,12,yes,medium,DOC-D:p4:r3
+RQ-003,Поставщик Е,Кабель ВВГнг-LS 3x2.5,400,м,78.40,20%,AMBIGUOUS,no,high,DOC-E:sheet2:r27
+RQ-004,Поставщик F,Светильник LED 36W IP65,30,шт,2480.00,20%,21,no,high,DOC-F:p3:r11
