@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T12:39:00Z"
+updated_at: "2026-09-17T12:52:00Z"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -65,7 +65,7 @@ items:
   - order: 40
     task_id: AW-020-A-BUYER-SEED-LIST
     title: "Buyer archetype and interview-candidate seed list"
-    status: ready
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
@@ -83,7 +83,7 @@ items:
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
     title: "Discovery interview and evidence capture kit"
-    status: in_progress
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
