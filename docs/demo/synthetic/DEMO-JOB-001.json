@@ -1,0 +1,35 @@
+{
+  "demo": true,
+  "customer": "ООО «ДемоСнаб» (вымышленная компания)",
+  "job_id": "DEMO-JOB-001",
+  "job_family": ["J-02", "J-03"],
+  "title": "Нормализация коммерческих предложений поставщиков",
+  "inputs": {
+    "files": 6,
+    "expected_source_rows": 87
+  },
+  "result_artifacts": [
+    "normalized_offers.csv",
+    "exceptions.csv",
+    "evidence.csv",
+    "execution-summary.md"
+  ],
+  "deadline_hours": 4,
+  "synthetic_price_rub": 9000,
+  "acceptance": {
+    "all_source_rows_accounted_for": true,
+    "required_fields_coverage": 1.0,
+    "no_invented_values": true,
+    "ambiguous_values_must_be_flagged": true,
+    "price_source_ref_coverage": 1.0,
+    "sample_size": 20,
+    "minimum_fully_correct_sample_rows": 19,
+    "analogs_must_be_explicit": true,
+    "schema_validation_required": true
+  },
+  "rework_policy": {
+    "included_revisions": 1,
+    "scope": "Only defects against frozen acceptance criteria"
+  },
+  "evidence_boundary": "Synthetic demo only; not customer evidence, revenue or willingness-to-pay proof"
+}
