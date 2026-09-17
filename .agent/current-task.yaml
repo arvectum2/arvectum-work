@@ -1,27 +1,30 @@
 version: 1
 repository: arvectum2/arvectum-work
-status: idle
-task_id: null
-goal: null
-authority: null
-definition_of_done: []
+status: in_progress
+task_id: AW-010-A-MARKET-MAP
+goal: "Build a dated public-source map of Russian freelance/B2B service marketplaces, AI automation studios, agent platforms and managed-service substitutes relevant to machine-executed outcomes."
+authority: AUTO
+definition_of_done:
+  - "Uses current public sources with source dates and distinguishes fact from hypothesis."
+  - "Covers at least the major substitute categories named by AW-010."
+  - "Records pricing/packaging/acceptance mechanisms where publicly evidenced."
+  - "Does not rank or declare a winning wedge before the full AW-010 gate evidence exists."
 completed:
   - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
-current: null
+current: "Public-source Russia market/substitute mapping."
 pending:
-  - AW-010-A-MARKET-MAP
   - AW-010-B-PAID-TASK-SAMPLE
   - AW-020-A-BUYER-SEED-LIST
   - AW-020-B-INTERVIEW-KIT
-last_verified_commit: "abb2eac224c5bcb15d521f2211498869bf718f6d"
+last_verified_commit: "a48a28a1cbf4a08197e97a24c55abe5b6ea1d99c"
 test_results:
-  - "AW-000 cross-review PASS for PR / not market validation; baseline is canonical on main."
-updated_at: "2026-09-17T11:36:00Z"
-resume_instruction: "Reconcile main, Company authority/renewal and the execution queue. Claim the earliest ready AUTO item. Do public/evidence work only. Never synthesize customer interviews, willingness to pay, acceptance, payment or stage GO/PASS. Skip HUMAN/REVIEW/OWNER gates and continue later independent AUTO work where available."
+  - "Company AM-4 renewal re-verified on 2026-09-17; next mandatory review deadline 2026-10-16 or earlier trigger."
+updated_at: "2026-09-17T14:50:00+03:00"
+resume_instruction: "Complete AW-010-A using public evidence only; write the dated research artifact, cross-check facts/hypotheses, then open a review-ready PR. Do not contact companies or claim AW-010 GO."
 execution:
-  claimed_by: null
-  execution_id: null
-  branch: null
-  base_commit: null
-  lease_until: null
+  claimed_by: project-watchdog
+  execution_id: "AW-WD-20260917-01"
+  branch: "watchdog/aw-010-a-market-map-20260917"
+  base_commit: "a48a28a1cbf4a08197e97a24c55abe5b6ea1d99c"
+  lease_until: "2026-09-17T16:40:00+03:00"
   manual_override: false
