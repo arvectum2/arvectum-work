@@ -1,0 +1,5 @@
+requested_item_id,supplier,field,value,evidence
+RQ-001,Поставщик А,unit_price_net,1240.00,"DOC-A page 2 row 4: price column explicitly states 1 240.00 without VAT"
+RQ-001,Поставщик В,is_analog,yes,"DOC-B sheet1 row 18: source labels the proposed item as an analog"
+RQ-002,Поставщик Г,vat_rate,AMBIGUOUS,"DOC-D page 4 row 3: price is present but VAT basis is not stated"
+RQ-003,Поставщик Е,delivery_days,AMBIGUOUS,"DOC-E sheet2 row 27: source says 'со склада/под заказ' without numeric delivery term"
