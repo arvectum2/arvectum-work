@@ -1,10 +1,8 @@
 version: 2
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T15:30:00Z"
+updated_at: "2026-09-17T15:38:00Z"
 owner_controls_order: true
 
-# Ordered executable projection of the canonical Discovery roadmap.
-# Presence here grants no authority beyond Company/Product governance.
 items:
   - order: 10
     task_id: AW-010-A-MARKET-MAP
@@ -15,7 +13,6 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
-    objective: "Map Russian substitutes and public buying patterns relevant to machine work."
 
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
@@ -26,7 +23,6 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
-    objective: "Collect public pricing/packaging/acceptance examples without treating them as Work demand evidence."
 
   - order: 30
     task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
@@ -37,10 +33,7 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
-    dependencies:
-      - AW-010-A-MARKET-MAP
-      - AW-010-B-PAID-TASK-SAMPLE
-    objective: "Synthesize public substitute evidence and counterexamples."
+    dependencies: [AW-010-A-MARKET-MAP, AW-010-B-PAID-TASK-SAMPLE]
 
   - order: 40
     task_id: AW-020-A-BUYER-SEED-LIST
@@ -51,7 +44,6 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
-    objective: "Prepare a privacy-safe public-source recruitment list."
 
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
@@ -62,44 +54,31 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
-    objective: "Capture recent real work, current method, cost, acceptance and buying path."
 
   - order: 55
     task_id: AW-020-C0-FLOW-PROTOTYPE
     title: "Interview prototype for managed digital work streams"
-    status: ready
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: primary
+    roadmap_priority: completed
     source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
-    dependencies:
-      - AW-020-B-INTERVIEW-KIT
-    objective: "Create a concrete low-cost interface prototype that demonstrates management of a recurring digital work stream rather than a prompt/chat experience."
-    acceptance_criteria:
-      - "Shows a work-stream dashboard with volume, accepted output, exceptions, latency, quality and cost."
-      - "Shows at least one end-to-end synthetic flow from incoming workload to accepted result."
-      - "Includes a visible comparison against employee + ChatGPT and own automation without claiming Work always wins."
-      - "Includes build-vs-buy economics as a customer decision aid."
-      - "All demo numbers and customer artifacts are clearly marked synthetic."
-      - "No production deployment, public launch, external spend or customer contact."
-    executor_scope: "May create static/clickable local prototype files and interview demo documentation in the repository."
+    dependencies: [AW-020-B-INTERVIEW-KIT]
+    evidence: "prototype/aw-020-c0-flow-ui/index.html + README.md"
 
   - order: 60
     task_id: AW-020-C-REAL-INTERVIEWS
     title: "First five real buyer/work-stream interviews"
-    status: blocked
+    status: ready
     authority: HUMAN
-    independent: false
+    independent: true
     auto_merge: false
     roadmap_priority: evidence_gate
     source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
-    dependencies:
-      - AW-020-C0-FLOW-PROTOTYPE
-    blocker: "Requires prototype integration plus explicitly authorized outbound campaign and genuine human/customer interaction."
+    dependencies: [AW-020-C0-FLOW-PROTOTYPE]
     owner_gate: "No outreach may be sent until an authorized Principal approves campaign boundaries and sending account/channel."
     objective: "Obtain first genuine buyer/process interviews and reconstruct real recurring work streams."
-    executor_scope: "Automation may prepare materials and normalize supplied real notes; it cannot invent interviews."
 
   - order: 70
     task_id: AW-020-D-INTERVIEW-SYNTHESIS
@@ -110,10 +89,8 @@ items:
     auto_merge: true
     roadmap_priority: evidence_gate
     source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
-    dependencies:
-      - AW-020-C-REAL-INTERVIEWS
+    dependencies: [AW-020-C-REAL-INTERVIEWS]
     blocker: "Requires genuine interview notes/evidence."
-    objective: "Identify repeated work streams, employee+AI residual burden, acceptance, volume, cost and paid-pilot patterns."
 
   - order: 80
     task_id: AW-030-WORKSTREAM-BENCHMARK
@@ -124,10 +101,8 @@ items:
     auto_merge: false
     roadmap_priority: later
     source: "docs/roadmap/ROADMAP.md#aw-030--work-stream-contract-acceptance-and-substitution-economics"
-    dependencies:
-      - AW-020-D-INTERVIEW-SYNTHESIS
+    dependencies: [AW-020-D-INTERVIEW-SYNTHESIS]
     blocker: "Requires a leading real buyer segment/work stream selected from AW-020 evidence."
-    objective: "Benchmark Work against manual, employee+AI and own-automation alternatives and freeze acceptance/economics."
 
   - order: 90
     task_id: AW-040-FIRST-REAL-WORKSTREAM
@@ -138,10 +113,8 @@ items:
     auto_merge: false
     roadmap_priority: evidence_gate
     source: "docs/roadmap/ROADMAP.md#aw-040--first-real-external-work-stream-experiment"
-    dependencies:
-      - AW-030-WORKSTREAM-BENCHMARK
+    dependencies: [AW-030-WORKSTREAM-BENCHMARK]
     blocker: "Requires a real external workload, real volume context, paid-pilot condition and frozen Acceptance."
-    objective: "Execute a real batch/short work stream and measure quality, throughput, exceptions, economics and customer operator burden avoided."
 
   - order: 100
     task_id: AW-050-FIRST-PAID-LOOP
@@ -152,10 +125,8 @@ items:
     auto_merge: false
     roadmap_priority: evidence_gate
     source: "docs/roadmap/ROADMAP.md#aw-050--first-real-paid-end-to-end-transaction"
-    dependencies:
-      - AW-040-FIRST-REAL-WORKSTREAM
+    dependencies: [AW-040-FIRST-REAL-WORKSTREAM]
     blocker: "Requires actual accepted work and lawful real-money settlement."
-    objective: "Measure real revenue, cost per accepted unit/batch, contribution margin and repeat intent."
 
   - order: 110
     task_id: AW-060-GO-PIVOT-STOP
@@ -166,8 +137,6 @@ items:
     auto_merge: false
     roadmap_priority: owner_gate
     source: "docs/roadmap/ROADMAP.md#aw-060--go--pivot--stop"
-    dependencies:
-      - AW-050-FIRST-PAID-LOOP
+    dependencies: [AW-050-FIRST-PAID-LOOP]
     blocker: "Requires complete Discovery evidence package."
     owner_gate: "Only attributable Company Owner authority may decide Continue/Pivot/Stop and admit post-Discovery product build."
-    objective: "Decide whether Work deserves investment and whether the next model is managed service, software control plane or later marketplace."

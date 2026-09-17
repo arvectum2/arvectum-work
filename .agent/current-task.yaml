@@ -12,23 +12,24 @@ completed:
   - "AW-020 interview/evidence kit merged."
   - "AW-020 buyer discovery seed list merged."
   - "AW-020 interview concept and synthetic demo pack merged via PR #12."
-  - "Product direction accepted: Work tests managed recurring digital work streams paid per accepted result, not an AI prompt/tool wrapper."
-current: "Next AUTO item after integration: AW-020-C0-FLOW-PROTOTYPE — build a concrete interview prototype showing work-stream operations, employee+ChatGPT substitute comparison and buy-vs-own-automation economics."
+  - "Product Decision 001 and roadmap 0.2.0 merged via PR #13: Work tests managed recurring digital work streams paid per accepted result."
+  - "AW-020-C0 flow-management interview prototype prepared in prototype/aw-020-c0-flow-ui/."
+current: "AW-020-C real buyer/work-stream interviews are the next evidence gate. Prototype is ready; OUTBOUND remains not authorized until explicit campaign + sending-account/channel approval."
 pending:
-  - AW-020-C0-FLOW-PROTOTYPE
   - AW-020-C-REAL-INTERVIEWS
   - AW-020-D-INTERVIEW-SYNTHESIS
   - AW-030-WORKSTREAM-BENCHMARK
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "17102f06d0f481e0897357ad4425a67511ee6c03"
+last_verified_commit: "d80e34dfe29fae96ae1f6fea74e8a2b2a0ca1140"
 test_results:
-  - "Synthetic concept/demo exists and is explicitly not customer evidence."
-  - "New accepted Discovery direction requires employee+ChatGPT substitution and buy-Work-vs-own-automation tests."
+  - "Prototype shows work-stream dashboard, exceptions, evidence/quality, interactive substitute economics and explicit product boundaries."
+  - "All prototype customer names, volumes, prices and economics are synthetic and labelled as such."
+  - "Employee+ChatGPT and own-automation comparisons are now explicit Discovery tests; prototype does not assume Work always wins."
   - "No outreach sent and no real buyer interview, willingness-to-pay, paid pilot, acceptance, revenue or repeat-demand evidence exists yet."
-updated_at: "2026-09-17T15:30:00Z"
-resume_instruction: "Reconcile canonical roadmap/queue. If Product Decision 001 and roadmap 0.2.0 are integrated, claim AW-020-C0-FLOW-PROTOTYPE as the earliest ready AUTO item. Build only a reversible local/static interview prototype; do not deploy or contact customers. After prototype integration, AW-020-C remains HUMAN and outbound still requires explicit campaign + sending-channel approval."
+updated_at: "2026-09-17T15:39:00Z"
+resume_instruction: "Reconcile canonical queue. AW-020-C0 is complete after prototype integration. AW-020-C is HUMAN. Do not send outreach until an authorized Principal explicitly approves the bounded campaign and sending account/channel. After genuine interview evidence arrives, normalize it against work-stream volume, employee+AI residual burden, exceptions, cost and buy-vs-own-automation thresholds."
 execution:
   claimed_by: null
   execution_id: null
