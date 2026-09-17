@@ -18,10 +18,13 @@ completed:
   - "Product Decision 002: vacancy-first Discovery accepted; broad interviews deferred."
   - "Initial vacancy-function scan merged via PR #16."
   - "Vacancy corpus tranche 01 merged: 34 public observations across hh.ru, Rabota.ru, Zarplata.ru and SuperJob."
-  - "Top-3 synthetic commercial scenarios merged for primary docs/1C, logistics document closure and product/catalog data."
-  - "Tranche 02 prepared: active September hh.ru vacancy-level sample separated from archived 2026 persistence evidence."
-  - "Eight recurring function clusters are now explicit: primary docs/EDO; orders; warehouse/shipping closure; reconciliations; master data; catalog/marking; logistics/retail EDI; procurement/commercial document subflows."
-current: "AW-020-C1 remains active. Current-vacancy evidence has improved, but the >=100 target is not met. Archived vacancies are persistence evidence only and MUST NOT be counted as current."
+  - "Top-3 synthetic commercial scenarios merged."
+  - "Vacancy corpus tranche 02 merged via PR #18; current vs archived evidence separated."
+  - "Eight recurring function clusters are explicit."
+  - "Tranche 03 prepared with stricter archive-status rule, independent-source accessibility notes and additional exact hh.ru evidence."
+  - "High-volume clue captured: one current product-card moderation vacancy explicitly states 40,000 rows/day."
+  - "Candidate catalog/master-data split into unregulated C1 and regulated marking C2; unregulated master/catalog data promoted for early Discovery."
+current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -30,18 +33,20 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "02a9a2d2603a2b35ff0d14212136ce54f5515b1c"
+last_verified_commit: "f90b864ec1c511973995386b4aa3e90c9b126b16"
 test_results:
-  - "Current-vacancy records now directly support order-to-document, warehouse/shipping document closure, product/master-data and marking work streams."
-  - "Archived 2026 records repeatedly show the same 1C/EDO/order/reconciliation functions, but are excluded from the current-vacancy count."
-  - "Salary anchors remain role-level evidence only; Work pricing must use the automatable functional slice and workload volume, not the entire role salary."
+  - "Archive classification now relies on explicit page/title/metadata wording, not inferred is_archive booleans."
+  - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
+  - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
+  - "The 40,000 rows/day workload clue materially strengthens catalog/master-data as a throughput-priced Work candidate without validating any synthetic price."
+  - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-17T17:58:00Z"
-resume_instruction: "Continue AW-020-C1. Prefer active exact vacancy pages published in September 2026; keep archived evidence separate. Expand exact current records across additional accessible sources, deduplicate by vacancy URL/employer/role, capture salary and workload-volume clues, and maintain eight function clusters. Do not close the task until the explicit >=100 current-vacancy and >=50 salary-anchor criteria are genuinely met. Do not contact employers."
+updated_at: "2026-09-17T20:56:00+03:00"
+resume_instruction: "Continue AW-020-C1. Expand exact current vacancy records and reliable salary anchors; prefer explicit active-page status, deduplicate by URL/employer/role, and seek workload-volume clues. Maintain source-accessibility matrix instead of fabricating equal-quality five-source data. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260917-03
-  branch: discovery/aw-020-corpus-tranche-02
-  base_commit: "02a9a2d2603a2b35ff0d14212136ce54f5515b1c"
+  execution_id: AW-020-C1-20260917-04
+  branch: discovery/aw-020-corpus-tranche-03
+  base_commit: "f90b864ec1c511973995386b4aa3e90c9b126b16"
   lease_until: null
   manual_override: true
