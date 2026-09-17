@@ -1,180 +1,166 @@
-# AW-020-C — First five real buyer interviews: campaign proposal
+# AW-020-C — First five real buyer/work-stream interviews: campaign proposal
 
-Status: `Prepared / OUTBOUND NOT AUTHORIZED`
+Status: `Prepared v2 / OUTBOUND NOT AUTHORIZED`
 Date: `2026-09-17`
 Task: `AW-020-C-REAL-INTERVIEWS`
 Authority: `HUMAN for real outreach/interviews`
 
 ## 1. Purpose
 
-Prepare a bounded first recruitment batch for five genuine buyer/problem interviews without converting customer discovery into sales outreach.
+Recruit the first five genuine interviews for the accepted Arvectum Work concept.
 
-The campaign tests whether interviewees can reconstruct a **recent real task**, its current cost, acceptance, recurrence and buying path. It does not test whether people like the phrase “AI marketplace”.
+We are not asking whether companies «want AI».
 
-No message may be sent until the campaign parameters below are explicitly approved by the authorized Principal and the sending account/channel is explicitly available.
+We are looking for **real recurring digital work streams** where:
 
-## 2. Batch composition
+- there is measurable volume;
+- employees still spend meaningful operator time even with modern AI or could plausibly do so;
+- quality/acceptance can be described;
+- exceptions can be separated;
+- buying completed work may be preferable to both `employee + ChatGPT` and immediate owned automation.
 
-The first batch preserves the canonical diversity target: two service/back-office contexts, two supplier/B2B operating contexts and one large-enterprise context.
+No message may be sent until the campaign boundaries and sending account/channel are explicitly approved by the authorized Principal.
 
-| # | Organization | Archetype | Target function, not named person | Primary task themes to reconstruct | Public routing channel observed 2026-09-17 |
+## 2. First-five target set
+
+| # | Organization | Archetype | Target function | Work-stream themes to reconstruct | Public routing channel observed 2026-09-17 |
 |---|---|---|---|---|---|
-| 1 | Моё дело | A — professional-services operations | service operations / accounting delivery / back office / product operations | document normalization, reconciliations, recurring reporting, exception handling | general corporate inbox `info@moedelo.org`; official contacts: https://www.moedelo.org/company/contacts |
-| 2 | Кнопка | A — professional-services operations | service operations / accounting ops / automation/product ops | document classification/checking, reconciliations, standard reports, exception handling | general corporate inbox `f1@knopka.com`; official contacts: https://knopka.com/contacts |
-| 3 | ВсеИнструменты.ру | B — B2B supplier/distributor | B2B sales operations / catalog-data / tender or document operations | specification completion, product matching, document packs, reconciliations, tender support | B2B support `pozakazy_b2b@vseinstrumenti.ru`; official contacts: https://www.vseinstrumenti.ru/services/contacts/ |
-| 4 | Русский Свет | B — B2B supplier/distributor | commercial operations / product data / specification desk | specification parsing, analog selection, price/catalog reconciliation, commercial proposal preparation | general feedback `feedback@russvet.ru`; official site: https://russvet.ru/ |
-| 5 | X5 | C — large-enterprise functional team | procurement operations / supplier operations / document/data operations | supplier onboarding, document completeness, procurement-data normalization, recurring reconciliation/reporting | corporate contact form / partner-supplier routes: https://www.x5.ru/ru/ and https://www.x5.ru/ru/partners/ |
+| 1 | Моё дело | A — professional-services operations | service/accounting delivery, back office, product operations | recurring document flows, reconciliations, reporting, exception queues | `info@moedelo.org`; official contacts: https://www.moedelo.org/company/contacts |
+| 2 | Кнопка | A — professional-services operations | service/accounting ops, automation/product ops | document classification/checking, reconciliations, standardized outputs, exceptions | `f1@knopka.com`; official contacts: https://knopka.com/contacts |
+| 3 | ВсеИнструменты.ру | B — B2B supplier/distributor | B2B sales ops, catalog/specification/tender operations | high-volume specifications, product matching, document packs, recurring data reconciliation | `pozakazy_b2b@vseinstrumenti.ru`; official contacts: https://www.vseinstrumenti.ru/services/contacts/ |
+| 4 | Русский Свет | B — B2B supplier/distributor | commercial operations, product data, specification desk | specification parsing, analog/product reconciliation, proposal preparation, catalog data flows | `feedback@russvet.ru`; official site: https://russvet.ru/ |
+| 5 | X5 | C — large enterprise | procurement/supplier/document-data operations | supplier/document flows, data normalization, recurring checks/reconciliation | corporate contact/partner routes: https://www.x5.ru/ru/ and https://www.x5.ru/ru/partners/ |
 
 ### Reserve targets
 
-If one primary route is clearly unsuitable before sending, substitute from the canonical seed list without changing archetype mix. Preferred reserves:
+If a primary route is unusable, preserve the 2/2/1 archetype mix using the existing canonical seed list. Preferred reserves: ЭТМ, 1C-WiseAdvice, Эlevel; large-enterprise reserve only when a relevant function is realistically reachable.
 
-- ЭТМ — commercial/specification/product-data operations; public contact centre `8 800 775-17-71` and official digital channels. Do not default to a phone call if an asynchronous route can be found.
-- 1C-WiseAdvice — accounting operations / quality-control / automation.
-- Эlevel — commercial engineering / specification desk.
-- СИБУР / Норникель / Ростелеком — large-enterprise reserve only when access to a relevant function is realistic; do not wait on a long enterprise route before obtaining the first interviews elsewhere.
+Do not default to phone calls when an asynchronous route exists.
 
-## 3. Campaign boundary proposed for approval
-
-### Target set
-
-Only the five organizations above, plus a reserve replacement only if the original route is unusable. No expansion to a larger list without a new recorded campaign update.
+## 3. Proposed bounded campaign
 
 ### Message class
 
-One-to-one **research interview invitation**. Not advertising, not a product launch announcement, not a commercial offer, not a tender submission and not a request to purchase anything.
+One-to-one **research interview invitation**.
 
-The sender must identify the purpose as customer/problem research and ask to be routed to a function that owns the relevant operational workload.
+Not advertising, not a product launch, not a commercial offer, not a tender submission and not a request to purchase.
 
-### Volume and frequency
+### Volume/cadence
 
-- maximum `5` initial outbound messages;
-- maximum `1` follow-up per organization;
-- follow-up no earlier than `5` business days after the initial message;
-- maximum `10` outbound messages total for this batch;
+- max `5` initial messages;
+- max `1` follow-up per organization;
+- follow-up after `5–7` business days;
+- max `10` total messages;
 - no automated repeated reminders;
-- no parallel messages to multiple employees inside the same organization unless the organization itself routes the request.
+- no simultaneous outreach to multiple employees inside one organization unless the organization itself routes the request.
 
-### Suppression / opt-out
+### Suppression
 
-Immediately suppress an organization from this campaign when:
+Stop immediately when:
 
 - recipient asks not to be contacted;
-- recipient says the request is irrelevant and provides no alternative route;
-- mailbox/system rejects the inquiry as inappropriate for the channel;
-- an interview is scheduled/completed;
+- request is rejected as inappropriate for the channel;
+- recipient says irrelevant and offers no route;
+- interview is scheduled/completed;
 - two permitted touches receive no response.
-
-Every follow-up must make it easy to decline. No further contact after explicit refusal.
 
 ### Commitment boundary
 
-The outreach may promise only:
+May promise only:
 
-- a `20–30 minute` research conversation;
-- no need to disclose confidential information;
-- no publication of company/name-sensitive details without permission;
+- 20–30 minute research conversation;
+- no confidential information required;
+- no publication of company-sensitive details without permission;
 - no sales presentation required.
 
-The outreach must **not** promise:
+Must not promise:
 
-- a free or paid pilot;
-- a delivery date or result;
-- pricing, discount or commercial terms;
-- integration, security, compliance or procurement applicability;
-- public-sector / 44-FZ / 223-FZ compatibility;
-- any action by Arvectum OS or third-party providers;
-- any contract, payment, NDA or data-processing commitment.
+- pilot or free work;
+- price/discount;
+- delivery/SLA;
+- integration/security/compliance/procurement applicability;
+- 44-FZ/223-FZ compatibility;
+- contract/payment/NDA/data-processing commitment;
+- any Arvectum OS action.
 
-If a respondent asks for a pilot during recruitment, record the signal and move it to a separate review before making any commitment.
+If a respondent asks for a pilot, record the signal and move to separate review before commitment.
 
 ## 4. Initial routing message
 
-Use the organization name and target function, but do not personalize with scraped private data.
-
-> Здравствуйте! Я занимаюсь исследованием для Arvectum Work — мы изучаем, какие повторяющиеся операции с документами и данными компании сегодня выполняют вручную, через подрядчиков или внутреннюю автоматизацию. Это не продажа и не предложение внедрения.
+> Здравствуйте! Я занимаюсь исследованием для Arvectum Work. Мы изучаем повторяемые цифровые процессы, на которые компании сегодня тратят время сотрудников: обработку документов и данных, сверки, подготовку типовых результатов, разбор исключений.
 >
-> Ищу человека, который отвечает за [service operations / B2B commercial operations / procurement operations — выбрать одно] и может за 20–30 минут рассказать о последней реальной задаче такого типа: как она выполнялась, сколько занимала времени и как принимался результат.
+> Нас особенно интересует не отношение к AI, а реальная операционная нагрузка: какой объём проходит через процесс, что сотрудники уже делают с помощью ChatGPT/других инструментов, что всё равно остаётся ручным и когда компании выгоднее купить готовую работу или построить собственную автоматизацию.
 >
-> Конфиденциальные данные не нужны; без разрешения мы не публикуем название компании или чувствительные детали. Если такой запрос не по адресу, буду благодарен, если подскажете подходящую функцию или общий канал. Если подобные обращения нежелательны, просто сообщите — больше писать не будем.
+> Ищу человека, который отвечает за [функция] и может за 20–30 минут разобрать один последний реальный процесс. Это исследование, не продажа и не предложение внедрения. Конфиденциальные данные не нужны.
 >
-> Спасибо!
+> Если запрос не по адресу, буду благодарен за подходящую функцию или общий канал. Если такие обращения нежелательны, сообщите — больше писать не будем.
+>
+> Спасибо!  
 > Arvectum Work
 
-Do not add a deck, long product description, marketplace claims or links to an unfinished product in the first touch.
+Do not attach deck/product links in first touch.
 
-## 5. Follow-up message
+## 5. Follow-up
 
-One follow-up only, after 5–7 business days:
-
-> Здравствуйте! Один раз возвращаюсь к запросу ниже — ищу 20–30 минут на исследовательское интервью с человеком, который владеет реальной операционной нагрузкой в [function]. Нас интересует конкретный недавний процесс и его текущая экономика, а не мнение об AI.
+> Здравствуйте! Один раз возвращаюсь к исследовательскому запросу ниже. Ищу 20–30 минут с человеком, который владеет реальной операционной нагрузкой в [функция]. Нас интересует конкретный поток работы, его объём, текущая стоимость и то, сколько ручного участия остаётся даже при использовании современных AI-инструментов.
 >
 > Если запрос неактуален, отвечать не нужно — повторных сообщений не будет. Если можете перенаправить к подходящей функции, буду благодарен.
 
 ## 6. Interview execution rule
 
-Once a respondent agrees, use `docs/discovery/AW-020-INTERVIEW-KIT-RU.md`.
+Use `docs/discovery/AW-020-INTERVIEW-KIT-RU.md`.
 
-Before explaining the Work concept, reconstruct at least one recent real task:
+Before showing Work/prototype reconstruct at minimum:
 
-1. trigger;
-2. inputs;
-3. output;
-4. current executor/method;
-5. current time/cost anchor or honest `unknown`;
-6. acceptance owner and criteria;
-7. frequency;
-8. data/access restrictions;
-9. current buying/payment path.
+1. unit/input/output;
+2. real volume and peaks or honest `unknown`;
+3. current executor/method;
+4. current AI use;
+5. residual operator work after AI;
+6. cost/time anchor;
+7. acceptance owner/rule;
+8. exceptions;
+9. data/access restrictions;
+10. buying path;
+11. conditions under which own automation becomes preferable.
 
-Only after this reconstruction may the interviewer explain the Arvectum Work concept and test objections / paid-pilot conditions.
+Only then show `prototype/aw-020-c0-flow-ui/index.html` and ask the respondent to attack the concept.
 
 ## 7. Evidence handling
 
-For every contact attempt record privately/operationally:
+Operationally record target, organization, channel, timestamps, initial/follow-up, routing result, suppression and interview status.
 
-- campaign target ID;
-- organization;
-- channel;
-- date/time;
-- initial / follow-up;
-- routing outcome;
-- suppression state;
-- interview scheduled? yes/no.
+Do not commit private correspondence, personal addresses/names/phones/calendar links or confidential replies to the public repository.
 
-Do not commit private correspondence, personal email addresses, names, phone numbers, calendar links or confidential replies to the public repository.
+Only privacy-safe interview summaries go into canonical evidence unless explicit permission supports more.
 
-For a completed interview commit only the privacy-safe summary from the canonical interview kit unless explicit permission supports more.
-
-## 8. Batch success and failure
-
-This five-organization batch is a recruitment experiment, not AW-020 completion.
+## 8. Recruitment outcomes
 
 Useful outcomes include:
 
-- one or more genuine interviews with recent-task reconstruction;
-- routing evidence showing which functions own the workload;
-- explicit rejection because external execution is irrelevant/prohibited;
-- evidence that these organizations are too automated or buying paths too heavy.
+- genuine interviews with quantified work streams;
+- evidence that employee + AI already solves the problem cheaply;
+- evidence that own automation is already the better option;
+- evidence that external execution is unacceptable;
+- routing evidence to functions that actually own the work;
+- real paid-pilot conditions.
 
-Do not call lack of replies product rejection. It is recruitment-channel evidence only.
-
-AW-020 still targets 15–20 interviews / 25+ concrete recent tasks overall, with stronger evidence weighted above interview count.
+No reply is channel evidence, not product rejection.
 
 ## 9. Authorization required before sending
 
-To activate this campaign, the approving Principal must explicitly approve all of the following as a single bounded campaign:
+Principal must explicitly approve:
 
-- targets: the five organizations in section 2, with reserve substitutions only as defined;
-- message class: research interview invitation from section 3;
-- cadence: one initial + at most one follow-up after 5–7 business days;
-- volume cap: 10 messages total;
-- suppression/opt-out rules from section 3;
-- commitment boundary from section 3;
-- sending account/channel to be used.
+- these five targets and reserve rule;
+- research-interview message class;
+- one initial + one follow-up after 5–7 business days;
+- 10-message cap;
+- suppression/opt-out rules;
+- commitment boundary;
+- sending account/channel.
 
-Until that approval exists, status remains `OUTBOUND NOT AUTHORIZED` and Project Watchdog must report the HUMAN gate rather than send messages.
+Until then status remains `OUTBOUND NOT AUTHORIZED`.
 
 ## 10. Source note
 
-Public routing channels above were re-checked on 2026-09-17 from official corporate pages. Their presence is routing information only and does not imply consent, interest or buyer demand.
+Public routing channels were re-checked on 2026-09-17 from official corporate pages. Presence of a routing channel does not imply consent, interest or buyer demand.
