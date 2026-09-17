@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T11:35:00Z"
+updated_at: "2026-09-17T15:05:00+03:00"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -9,7 +9,7 @@ items:
   - order: 10
     task_id: AW-010-A-MARKET-MAP
     title: "Russia market and substitute map"
-    status: ready
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
@@ -23,6 +23,9 @@ items:
       - "Records pricing/packaging/acceptance mechanisms where publicly evidenced."
       - "Does not rank or declare a winning wedge before the full AW-010 gate evidence exists."
     executor_scope: "May use public web research and write privacy-safe repository research artifacts. No contact with companies or people."
+    evidence:
+      - docs/research/AW-010-RUSSIA-MARKET-AND-SUBSTITUTES-2026-09-17.md
+      - docs/reviews/AW-010-A-MARKET-MAP-CROSS-REVIEW.md
 
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
