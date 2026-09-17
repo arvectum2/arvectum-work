@@ -1,35 +1,35 @@
 version: 1
 repository: arvectum2/arvectum-work
 status: in_progress
-task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
-goal: "Extend the public evidence set to 30+ examples and synthesize packaging, acceptance patterns and counterexamples."
+task_id: AW-020-B-INTERVIEW-KIT
+goal: "Turn the canonical customer-discovery protocol into a reusable interview/evidence capture kit."
 authority: AUTO
 definition_of_done:
-  - "30+ public examples total."
-  - "Observed patterns and counterexamples are separated from interpretation."
-  - "At least two plausible wedges are expressed only as hypotheses."
-  - "Unresolved Russia-specific legal/payment questions remain explicit."
+  - "Recent-task reconstruction remains the primary interview method."
+  - "Current workaround, cost anchor, acceptance owner, recurrence, data constraints and buying path are captured."
+  - "Opinion, behavior, cost evidence and paid-pilot signals are separated."
+  - "Public-repo privacy boundaries are explicit and no customer evidence is fabricated."
 completed:
-  - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
-  - "Project Watchdog bootstrap merged to main at be28110b3c54962fea05159c831e19cfd468609c."
-  - "AW-010-A market/substitute map merged via PR #5 at f94027243386ad2e57aac0e9c5d87dbb85f0452d."
-  - "AW-010-B 15-example paid-task sample merged via PR #6 at 4b76922e7cf993359a45f0436aacd5b43a8c9edd."
-  - "AW-010-C synthesis extends the evidence set to 33 examples and records patterns, counterexamples and wedge hypotheses."
-current: "Open and integrate the review-ready AW-010-C PR; task-level evidence is complete but AW-010 stage GO/PIVOT/STOP is not self-approved."
+  - "AW-000 discovery baseline merged to main."
+  - "Project Watchdog bootstrap merged to main."
+  - "AW-010-A market map merged via PR #5."
+  - "AW-010-B 15-example paid-task sample merged via PR #6."
+  - "AW-010-C 33-example synthesis merged via PR #7 at f69e5768a7e479142bd51ee2e225fbc7cf531da2."
+  - "AW-020-B Russian interview/evidence kit created with A0-A4 acceptance, C0-C4 cost and P0-P5 pilot-signal rubrics."
+current: "Open and integrate the AW-020-B interview-kit PR."
 pending:
   - AW-020-A-BUYER-SEED-LIST
-  - AW-020-B-INTERVIEW-KIT
   - AW-020-C-REAL-INTERVIEWS
-last_verified_commit: "4b76922e7cf993359a45f0436aacd5b43a8c9edd"
+last_verified_commit: "f69e5768a7e479142bd51ee2e225fbc7cf531da2"
 test_results:
-  - "AW-010-C task-level acceptance reviewed: 33 examples, patterns/counterexamples separated, three wedge hypotheses, unresolved legal/payment questions explicit."
-  - "No buyer demand, realized transaction or AW-010 stage GO/PIVOT/STOP claimed."
-updated_at: "2026-09-17T12:34:00Z"
-resume_instruction: "Reconcile main and the AW-010-C PR. If integrated, mark AW-010-C done. Continue independent AW-020-A or AW-020-B work without outreach. Never synthesize interviews or demand evidence."
+  - "Interview kit reviewed against canonical CUSTOMER-DISCOVERY-RU protocol: task-level acceptance satisfied."
+  - "No interview or demand evidence fabricated."
+updated_at: "2026-09-17T12:39:00Z"
+resume_instruction: "Reconcile main and the AW-020-B PR. If integrated, mark AW-020-B done and continue AW-020-A public buyer seed-list work. Do not send outreach."
 execution:
   claimed_by: project-watchdog
-  execution_id: "manual-continue-2026-09-17-aw010c"
-  branch: research/aw-010-30-example-synthesis
-  base_commit: "4b76922e7cf993359a45f0436aacd5b43a8c9edd"
-  lease_until: "2026-09-17T14:24:00Z"
+  execution_id: "manual-continue-2026-09-17-aw020b"
+  branch: discovery/aw-020-interview-kit
+  base_commit: "f69e5768a7e479142bd51ee2e225fbc7cf531da2"
+  lease_until: "2026-09-17T14:29:00Z"
   manual_override: false
