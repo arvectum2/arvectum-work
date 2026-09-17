@@ -1,27 +1,33 @@
 version: 1
 repository: arvectum2/arvectum-work
-status: idle
-task_id: null
-goal: null
-authority: null
-definition_of_done: []
+status: in_progress
+task_id: AW-010-A-MARKET-MAP
+goal: "Build a dated public-source map of Russian substitutes relevant to machine-executed outcomes."
+authority: AUTO
+definition_of_done:
+  - "Current public sources with observation date are recorded."
+  - "Major substitute categories from AW-010 are covered."
+  - "Pricing/packaging and acceptance mechanisms are recorded where evidenced."
+  - "Facts are separated from hypotheses and no winning wedge is declared."
 completed:
   - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
-current: null
+  - "Project Watchdog bootstrap merged to main at be28110b3c54962fea05159c831e19cfd468609c."
+  - "AW-010 market/substitute research artifact created on research/aw-010-market-map."
+current: "Open review-ready PR for AW-010-A; task-level evidence is complete but repository integration is pending."
 pending:
-  - AW-010-A-MARKET-MAP
   - AW-010-B-PAID-TASK-SAMPLE
   - AW-020-A-BUYER-SEED-LIST
   - AW-020-B-INTERVIEW-KIT
-last_verified_commit: "abb2eac224c5bcb15d521f2211498869bf718f6d"
+last_verified_commit: "be28110b3c54962fea05159c831e19cfd468609c"
 test_results:
-  - "AW-000 cross-review PASS for PR / not market validation; baseline is canonical on main."
-updated_at: "2026-09-17T11:36:00Z"
-resume_instruction: "Reconcile main, Company authority/renewal and the execution queue. Claim the earliest ready AUTO item. Do public/evidence work only. Never synthesize customer interviews, willingness to pay, acceptance, payment or stage GO/PASS. Skip HUMAN/REVIEW/OWNER gates and continue later independent AUTO work where available."
+  - "AW-010-A acceptance criteria reviewed against current public-source artifact: satisfied at task level."
+  - "No AW-010 stage GO/PIVOT/STOP claimed."
+updated_at: "2026-09-17T12:18:00Z"
+resume_instruction: "Reconcile main and this PR. If AW-010-A is integrated, close this task factually and claim the earliest ready AUTO item. If not, do not duplicate the research; advance another independent AUTO item if useful. Never synthesize customer evidence."
 execution:
-  claimed_by: null
-  execution_id: null
-  branch: null
-  base_commit: null
-  lease_until: null
+  claimed_by: project-watchdog
+  execution_id: "manual-first-run-2026-09-17"
+  branch: research/aw-010-market-map
+  base_commit: "be28110b3c54962fea05159c831e19cfd468609c"
+  lease_until: "2026-09-17T14:08:00Z"
   manual_override: false
