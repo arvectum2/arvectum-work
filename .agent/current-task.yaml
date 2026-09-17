@@ -1,30 +1,28 @@
 version: 1
 repository: arvectum2/arvectum-work
-status: in_progress
-task_id: AW-010-A-MARKET-MAP
-goal: "Build a dated public-source map of Russian freelance/B2B service marketplaces, AI automation studios, agent platforms and managed-service substitutes relevant to machine-executed outcomes."
-authority: AUTO
-definition_of_done:
-  - "Uses current public sources with source dates and distinguishes fact from hypothesis."
-  - "Covers at least the major substitute categories named by AW-010."
-  - "Records pricing/packaging/acceptance mechanisms where publicly evidenced."
-  - "Does not rank or declare a winning wedge before the full AW-010 gate evidence exists."
+status: idle
+task_id: null
+goal: null
+authority: null
+definition_of_done: []
 completed:
   - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
-current: "Public-source Russia market/substitute mapping."
+  - "AW-010-A-MARKET-MAP completed on branch watchdog/aw-010-a-market-map-20260917 with dated market map and task cross-review."
+current: null
 pending:
   - AW-010-B-PAID-TASK-SAMPLE
   - AW-020-A-BUYER-SEED-LIST
   - AW-020-B-INTERVIEW-KIT
 last_verified_commit: "a48a28a1cbf4a08197e97a24c55abe5b6ea1d99c"
 test_results:
-  - "Company AM-4 renewal re-verified on 2026-09-17; next mandatory review deadline 2026-10-16 or earlier trigger."
-updated_at: "2026-09-17T14:50:00+03:00"
-resume_instruction: "Complete AW-010-A using public evidence only; write the dated research artifact, cross-check facts/hypotheses, then open a review-ready PR. Do not contact companies or claim AW-010 GO."
+  - "AW-010-A task cross-review PASS / not AW-010 stage PASS."
+  - "No customer outreach, commercial commitment or external effect occurred."
+updated_at: "2026-09-17T15:08:00+03:00"
+resume_instruction: "After this branch is integrated, reconcile main and claim AW-010-B as the earliest ready AUTO item. AW-010 stage GO remains REVIEW."
 execution:
-  claimed_by: project-watchdog
-  execution_id: "AW-WD-20260917-01"
-  branch: "watchdog/aw-010-a-market-map-20260917"
-  base_commit: "a48a28a1cbf4a08197e97a24c55abe5b6ea1d99c"
-  lease_until: "2026-09-17T16:40:00+03:00"
+  claimed_by: null
+  execution_id: null
+  branch: null
+  base_commit: null
+  lease_until: null
   manual_override: false
