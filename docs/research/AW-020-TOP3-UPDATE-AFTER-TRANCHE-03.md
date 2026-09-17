@@ -9,7 +9,7 @@ This note refines, but does not replace, the synthetic economics in `AW-020-TOP3
 
 Earlier scenario C combined generic product/catalog work with regulated marking operations.
 
-The vacancy evidence now supports splitting them:
+The vacancy evidence supports splitting them:
 
 - **C1 — unregulated catalog / master-data validation**: preferred early candidate;
 - **C2 — regulated marking / «Честный знак» operations**: later specialization or narrowly scoped data-preparation subflow.
@@ -22,12 +22,12 @@ Observed atomic work:
 
 `row/card/feed → normalize attributes → map to canonical nomenclature → detect duplicate/error → enrich permitted missing facts → produce accepted row/update proposal → exception`
 
-New evidence:
+Evidence:
 
-- current vacancies show 80–140k+ RUB/month salary anchors for master-data, catalog and adjacent structured-data roles;
-- one current vacancy explicitly states **40,000 rows/day** for product-card moderation.
+- current/recent vacancy evidence shows roughly 80–140k+ RUB/month salary anchors for master-data, catalog and adjacent structured-data roles, subject to exact-page status verification before current-corpus counting;
+- one **archived** hh.ru vacancy for product-card moderation directly states a workload of up to **40,000 rows/day**. Exact-page verification confirms the number belongs to the duties, but the vacancy is archived from 2025-10-06.
 
-This strengthens the hypothesis that catalog/master-data work can be sold as measurable processing capacity rather than a seat/job title.
+The historical high-volume record strengthens the hypothesis that catalog/master-data work can be sold as measurable processing capacity rather than a seat/job title, but it does **not** prove current 2026 workload demand.
 
 ### Commercial unit to test
 
@@ -48,9 +48,9 @@ Candidate service metrics:
 
 ### Important caveat
 
-The existing synthetic scenario used `25,000 records/month` only as a modeling assumption. The new `40,000 rows/day` evidence does **not** validate that assumed customer volume or the synthetic `2.2 RUB/record` price. It only proves that real employers can have very large row-level workloads.
+The existing synthetic scenario used `25,000 records/month` only as a modeling assumption. The historical `40,000 rows/day` evidence does **not** validate that assumed customer volume or the synthetic `2.2 RUB/record` price. It only proves that real employers have operated very large row-level workloads in this function class.
 
-At such high stable volumes, owned automation may become economically preferable very quickly. That makes C1 especially useful for testing the **Work → owned automation** crossover.
+At sufficiently high stable volumes, owned automation may become economically preferable very quickly. That makes C1 useful for testing the **Work → owned automation** crossover, provided current workload evidence can also be found.
 
 ## 3. C2 — regulated marking
 
@@ -73,7 +73,7 @@ Do not include by default:
 ## 4. Updated top-three Discovery candidates
 
 1. **Order-to-document / 1C + EDO operations** — broadest repeated pattern across employers.
-2. **Unregulated catalog/master-data validation** — strongest explicit high-volume evidence and a clean per-record commercial unit.
+2. **Unregulated catalog/master-data validation** — clean per-record commercial unit, current/recent salary/function evidence and strong historical high-volume evidence; current workload-volume evidence is still missing.
 3. **Warehouse/shipping document closure** — good acceptance boundary, but integration and coupling to physical operations are material risks.
 
 Regulated marking remains a useful adjacent specialization but not the default first wedge.
