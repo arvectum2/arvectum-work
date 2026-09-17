@@ -1,6 +1,6 @@
-version: 2
+version: 3
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T15:38:00Z"
+updated_at: "2026-09-17T15:55:00Z"
 owner_controls_order: true
 
 items:
@@ -33,7 +33,6 @@ items:
     auto_merge: true
     roadmap_priority: completed
     source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
-    dependencies: [AW-010-A-MARKET-MAP, AW-010-B-PAID-TASK-SAMPLE]
 
   - order: 40
     task_id: AW-020-A-BUYER-SEED-LIST
@@ -43,7 +42,6 @@ items:
     independent: true
     auto_merge: true
     roadmap_priority: completed
-    source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
 
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
@@ -53,44 +51,59 @@ items:
     independent: true
     auto_merge: true
     roadmap_priority: completed
-    source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
 
   - order: 55
     task_id: AW-020-C0-FLOW-PROTOTYPE
-    title: "Interview prototype for managed digital work streams"
+    title: "Managed digital work-stream prototype"
     status: done
     authority: AUTO
     independent: true
     auto_merge: true
     roadmap_priority: completed
-    source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
-    dependencies: [AW-020-B-INTERVIEW-KIT]
-    evidence: "prototype/aw-020-c0-flow-ui/index.html + README.md"
+    evidence: "prototype/aw-020-c0-flow-ui/"
 
-  - order: 60
-    task_id: AW-020-C-REAL-INTERVIEWS
-    title: "First five real buyer/work-stream interviews"
-    status: ready
-    authority: HUMAN
+  - order: 57
+    task_id: AW-020-C1-VACANCY-FUNCTION-CORPUS
+    title: "Russian vacancy/function corpus and automation opportunity map"
+    status: active
+    authority: AUTO
     independent: true
-    auto_merge: false
-    roadmap_priority: evidence_gate
+    auto_merge: true
+    roadmap_priority: primary
     source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
     dependencies: [AW-020-C0-FLOW-PROTOTYPE]
-    owner_gate: "No outreach may be sent until an authorized Principal approves campaign boundaries and sending account/channel."
-    objective: "Obtain first genuine buyer/process interviews and reconstruct real recurring work streams."
+    objective: "Build a current public corpus of >=100 relevant vacancies, decompose roles into atomic recurring duties, identify top work-stream candidates and model Work vs employee+AI vs owned automation."
+    acceptance_criteria:
+      - ">=100 relevant current vacancies across >=5 sources where accessible, with freshness recorded."
+      - ">=8 recurring function clusters independent of job titles."
+      - "Salary/cost anchors for >=50 records."
+      - "Every included record separates automatable flow from human judgment/communication/accountability."
+      - "Top 3 work-stream candidates selected for deeper evidence."
+      - "Synthetic Work offer and owned-automation alternative drafted for each top candidate."
+      - "Vacancy evidence is never presented as willingness-to-pay evidence for Arvectum Work."
+    executor_scope: "Public-source research and repo artifacts only. No outreach, applications, scraping of private data or employer contact."
+
+  - order: 60
+    task_id: AW-020-C2-FOCUSED-BUYER-VALIDATION
+    title: "Focused buyer validation for top vacancy-derived work streams"
+    status: blocked
+    authority: HUMAN
+    independent: false
+    auto_merge: false
+    roadmap_priority: evidence_gate
+    dependencies: [AW-020-C1-VACANCY-FUNCTION-CORPUS]
+    blocker: "Vacancy/function corpus must first narrow the top work streams and target functions."
+    owner_gate: "Any outbound requires separately approved campaign boundaries and sending account/channel."
 
   - order: 70
-    task_id: AW-020-D-INTERVIEW-SYNTHESIS
-    title: "Synthesize real work-stream discovery evidence"
+    task_id: AW-020-D-DISCOVERY-SYNTHESIS
+    title: "Synthesize vacancy + focused buyer evidence"
     status: blocked
     authority: AUTO
     independent: false
     auto_merge: true
     roadmap_priority: evidence_gate
-    source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
-    dependencies: [AW-020-C-REAL-INTERVIEWS]
-    blocker: "Requires genuine interview notes/evidence."
+    dependencies: [AW-020-C1-VACANCY-FUNCTION-CORPUS, AW-020-C2-FOCUSED-BUYER-VALIDATION]
 
   - order: 80
     task_id: AW-030-WORKSTREAM-BENCHMARK
@@ -100,9 +113,7 @@ items:
     independent: false
     auto_merge: false
     roadmap_priority: later
-    source: "docs/roadmap/ROADMAP.md#aw-030--work-stream-contract-acceptance-and-substitution-economics"
-    dependencies: [AW-020-D-INTERVIEW-SYNTHESIS]
-    blocker: "Requires a leading real buyer segment/work stream selected from AW-020 evidence."
+    dependencies: [AW-020-D-DISCOVERY-SYNTHESIS]
 
   - order: 90
     task_id: AW-040-FIRST-REAL-WORKSTREAM
@@ -112,9 +123,7 @@ items:
     independent: false
     auto_merge: false
     roadmap_priority: evidence_gate
-    source: "docs/roadmap/ROADMAP.md#aw-040--first-real-external-work-stream-experiment"
     dependencies: [AW-030-WORKSTREAM-BENCHMARK]
-    blocker: "Requires a real external workload, real volume context, paid-pilot condition and frozen Acceptance."
 
   - order: 100
     task_id: AW-050-FIRST-PAID-LOOP
@@ -124,9 +133,7 @@ items:
     independent: false
     auto_merge: false
     roadmap_priority: evidence_gate
-    source: "docs/roadmap/ROADMAP.md#aw-050--first-real-paid-end-to-end-transaction"
     dependencies: [AW-040-FIRST-REAL-WORKSTREAM]
-    blocker: "Requires actual accepted work and lawful real-money settlement."
 
   - order: 110
     task_id: AW-060-GO-PIVOT-STOP
@@ -136,7 +143,5 @@ items:
     independent: false
     auto_merge: false
     roadmap_priority: owner_gate
-    source: "docs/roadmap/ROADMAP.md#aw-060--go--pivot--stop"
     dependencies: [AW-050-FIRST-PAID-LOOP]
-    blocker: "Requires complete Discovery evidence package."
     owner_gate: "Only attributable Company Owner authority may decide Continue/Pivot/Stop and admit post-Discovery product build."
