@@ -1,35 +1,33 @@
 version: 1
 repository: arvectum2/arvectum-work
 status: in_progress
-task_id: AW-020-B-INTERVIEW-KIT
-goal: "Turn the canonical customer-discovery protocol into a reusable interview/evidence capture kit."
+task_id: AW-020-A-BUYER-SEED-LIST
+goal: "Prepare a privacy-safe public-source seed list of organizations/functions for human-led discovery recruitment."
 authority: AUTO
 definition_of_done:
-  - "Recent-task reconstruction remains the primary interview method."
-  - "Current workaround, cost anchor, acceptance owner, recurrence, data constraints and buying path are captured."
-  - "Opinion, behavior, cost evidence and paid-pilot signals are separated."
-  - "Public-repo privacy boundaries are explicit and no customer evidence is fabricated."
+  - "At least three buyer archetypes are represented."
+  - "Only public organizational/business information is used."
+  - "No unnecessary personal contact data is copied into the public repository."
+  - "The artifact is explicitly a recruitment aid, not buyer-demand evidence."
 completed:
   - "AW-000 discovery baseline merged to main."
   - "Project Watchdog bootstrap merged to main."
-  - "AW-010-A market map merged via PR #5."
-  - "AW-010-B 15-example paid-task sample merged via PR #6."
-  - "AW-010-C 33-example synthesis merged via PR #7 at f69e5768a7e479142bd51ee2e225fbc7cf531da2."
-  - "AW-020-B Russian interview/evidence kit created with A0-A4 acceptance, C0-C4 cost and P0-P5 pilot-signal rubrics."
-current: "Open and integrate the AW-020-B interview-kit PR."
+  - "AW-010-A/B/C public market evidence merged to main."
+  - "AW-020-B interview/evidence kit merged via PR #8 at 23d26c25271756d8b0521d89df3c8018940847df."
+  - "AW-020-A seed list created with 12 organizations across three buyer archetypes and function-level recruitment targets."
+current: "Open and integrate the AW-020-A buyer-seed-list PR; no outreach has been sent."
 pending:
-  - AW-020-A-BUYER-SEED-LIST
   - AW-020-C-REAL-INTERVIEWS
-last_verified_commit: "f69e5768a7e479142bd51ee2e225fbc7cf531da2"
+last_verified_commit: "23d26c25271756d8b0521d89df3c8018940847df"
 test_results:
-  - "Interview kit reviewed against canonical CUSTOMER-DISCOVERY-RU protocol: task-level acceptance satisfied."
-  - "No interview or demand evidence fabricated."
-updated_at: "2026-09-17T12:39:00Z"
-resume_instruction: "Reconcile main and the AW-020-B PR. If integrated, mark AW-020-B done and continue AW-020-A public buyer seed-list work. Do not send outreach."
+  - "AW-020-A task-level acceptance reviewed: three archetypes, 12 public-source organizations, no unnecessary personal contact data, no demand inference."
+  - "No outreach or customer interaction performed."
+updated_at: "2026-09-17T12:47:00Z"
+resume_instruction: "Reconcile main and the AW-020-A PR. If integrated, mark AW-020-A and AW-020-B done. No independent AUTO discovery item remains before real AW-020-C interviews; do not synthesize or send outreach without explicit campaign authority."
 execution:
   claimed_by: project-watchdog
-  execution_id: "manual-continue-2026-09-17-aw020b"
-  branch: discovery/aw-020-interview-kit
-  base_commit: "f69e5768a7e479142bd51ee2e225fbc7cf531da2"
-  lease_until: "2026-09-17T14:29:00Z"
+  execution_id: "manual-continue-2026-09-17-aw020a"
+  branch: discovery/aw-020-buyer-seed-list
+  base_commit: "23d26c25271756d8b0521d89df3c8018940847df"
+  lease_until: "2026-09-17T14:37:00Z"
   manual_override: false
