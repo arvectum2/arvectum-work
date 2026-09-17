@@ -21,10 +21,10 @@ completed:
   - "Top-3 synthetic commercial scenarios merged."
   - "Vacancy corpus tranche 02 merged via PR #18; current vs archived evidence separated."
   - "Eight recurring function clusters are explicit."
-  - "Tranche 03 prepared with stricter archive-status rule, independent-source accessibility notes and additional exact hh.ru evidence."
-  - "High-volume clue captured: one current product-card moderation vacancy explicitly states 40,000 rows/day."
-  - "Candidate catalog/master-data split into unregulated C1 and regulated marking C2; unregulated master/catalog data promoted for early Discovery."
-current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met."
+  - "Tranche 03 merged via PR #19 with stricter source-quality rules and refined candidate set."
+  - "Direct exact-page verification corrected hh.ru vacancy 130253648: the 40,000 rows/day workload statement is valid, but the vacancy is archived from 2025-10-06 and therefore is historical workload evidence only."
+  - "Candidate catalog/master-data remains promising, but current 2026 workload-volume evidence is still required."
+current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met. Exact-page status verification is required before high-value hh.ru records count as current."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -33,20 +33,20 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "f90b864ec1c511973995386b4aa3e90c9b126b16"
+last_verified_commit: "main-after-pr19"
 test_results:
-  - "Archive classification now relies on explicit page/title/metadata wording, not inferred is_archive booleans."
+  - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
+  - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
-  - "The 40,000 rows/day workload clue materially strengthens catalog/master-data as a throughput-priced Work candidate without validating any synthetic price."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-17T20:56:00+03:00"
-resume_instruction: "Continue AW-020-C1. Expand exact current vacancy records and reliable salary anchors; prefer explicit active-page status, deduplicate by URL/employer/role, and seek workload-volume clues. Maintain source-accessibility matrix instead of fabricating equal-quality five-source data. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
+updated_at: "2026-09-17T21:00:00+03:00"
+resume_instruction: "Continue AW-020-C1. First verify exact-page active/archive status for high-value hh.ru records before counting them as current. Then expand exact current vacancy records and reliable salary anchors; deduplicate by URL/employer/role and seek workload-volume clues. Maintain source-accessibility matrix instead of fabricating equal-quality five-source data. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260917-04
-  branch: discovery/aw-020-corpus-tranche-03
-  base_commit: "f90b864ec1c511973995386b4aa3e90c9b126b16"
+  execution_id: AW-020-C1-20260917-05
+  branch: fix/aw-020-130253648-archive-correction
+  base_commit: null
   lease_until: null
   manual_override: true
