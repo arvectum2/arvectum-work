@@ -1,0 +1,61 @@
+version: 1
+skill: project-watchdog
+repository: arvectum2/arvectum-work
+canonical_branch: main
+mode: roadmap_executor
+timezone: Europe/Moscow
+
+schedule:
+  provider: chatgpt_scheduled_task
+  cadence: hourly
+  timing_mode: exact_schedule
+  max_productive_quantum_minutes: 45
+  stale_progress_recovery_minutes: 90
+  self_disable_allowed: false
+  one_watchdog_per_project: true
+
+sources:
+  product_vision: docs/product/PRODUCT-VISION.md
+  hypotheses: docs/product/HYPOTHESIS.md
+  roadmap: docs/roadmap/ROADMAP.md
+  customer_discovery: docs/discovery/CUSTOMER-DISCOVERY-RU.md
+  job_taxonomy: docs/discovery/MACHINE-WORK-JOB-TAXONOMY.md
+  official_source_baseline: docs/research/OFFICIAL-SOURCE-BASELINE.md
+  current_task: .agent/current-task.yaml
+  execution_queue: .agent/execution-queue.yaml
+  executor_policy: .agent/executor-policy.yaml
+  checkpoints: .agent/checkpoints
+
+company_authority:
+  repository: arvectum2/arvectum-company
+  work_initiation_decision: docs/governance/decisions/DECISION-2026-09-17-ARVECTUM-WORK-INITIATION.md
+  am4_decision: docs/governance/decisions/DECISION-2026-09-14-POS-004-ROADMAP-EXECUTOR-AM4.md
+  am4_renewal: docs/governance/decisions/DECISION-2026-09-16-POS-004-ROADMAP-EXECUTOR-AM4-RENEWAL.md
+  assignment: docs/organization/POS-004-ROADMAP-EXECUTOR-AM4-AUTHORIZATION-v1.0.0.md
+  assignment_id: ASG-POS004-ROADMAP-EXECUTOR-2026-09-14
+  authority_mode: AM-4
+  mandatory_review_deadline: "2026-10-16"
+  automatic_merge_counter_limit: 10
+  automatic_merge_counter_must_be_reconciled_before_merge: true
+
+continuity:
+  resume_active_task_first: true
+  persist_checkpoint_after_material_stage: true
+  reconcile_against_repository_before_resume: true
+  do_not_repeat_verified_stages: true
+  continue_later_independent_auto_work_when_blocked: true
+
+merge:
+  default: fail_closed
+  require_queue_auto_merge_true: true
+  require_company_authority_valid: true
+  require_automatic_merge_counter_proven_below_limit: true
+  require_exact_head_ci_green_or_no_required_checks: true
+  require_no_unresolved_review_gate: true
+  require_reversible_repository_effect: true
+  forbid_release_or_external_effect: true
+
+audit:
+  github_issue: 2
+  report_every_run: true
+  suppress_silent_noop: true

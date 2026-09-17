@@ -1,0 +1,27 @@
+version: 1
+repository: arvectum2/arvectum-work
+status: idle
+task_id: null
+goal: null
+authority: null
+definition_of_done: []
+completed:
+  - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
+current: null
+pending:
+  - AW-010-A-MARKET-MAP
+  - AW-010-B-PAID-TASK-SAMPLE
+  - AW-020-A-BUYER-SEED-LIST
+  - AW-020-B-INTERVIEW-KIT
+last_verified_commit: "abb2eac224c5bcb15d521f2211498869bf718f6d"
+test_results:
+  - "AW-000 cross-review PASS for PR / not market validation; baseline is canonical on main."
+updated_at: "2026-09-17T11:36:00Z"
+resume_instruction: "Reconcile main, Company authority/renewal and the execution queue. Claim the earliest ready AUTO item. Do public/evidence work only. Never synthesize customer interviews, willingness to pay, acceptance, payment or stage GO/PASS. Skip HUMAN/REVIEW/OWNER gates and continue later independent AUTO work where available."
+execution:
+  claimed_by: null
+  execution_id: null
+  branch: null
+  base_commit: null
+  lease_until: null
+  manual_override: false
