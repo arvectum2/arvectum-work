@@ -1,0 +1,136 @@
+version: 1
+repository: arvectum2/arvectum-work
+mode: roadmap_executor
+
+sources:
+  current_task: .agent/current-task.yaml
+  execution_queue: .agent/execution-queue.yaml
+  canonical_roadmap: docs/roadmap/ROADMAP.md
+  product_vision: docs/product/PRODUCT-VISION.md
+  hypotheses: docs/product/HYPOTHESIS.md
+  company_authority:
+    repository: arvectum2/arvectum-company
+    work_initiation_decision: docs/governance/decisions/DECISION-2026-09-17-ARVECTUM-WORK-INITIATION.md
+    am4_decision: docs/governance/decisions/DECISION-2026-09-14-POS-004-ROADMAP-EXECUTOR-AM4.md
+    am4_renewal: docs/governance/decisions/DECISION-2026-09-16-POS-004-ROADMAP-EXECUTOR-AM4-RENEWAL.md
+    assignment: docs/organization/POS-004-ROADMAP-EXECUTOR-AM4-AUTHORIZATION-v1.0.0.md
+
+selection:
+  resume_active_current_task_first: true
+  scan_queue_in_order: true
+  may_skip_blocked_or_human_gated_items: true
+  may_execute_later_independent_items: true
+  executor_may_reorder_queue: false
+  executor_may_change_authority_class: false
+  executor_may_create_new_priorities: false
+  dependencies_must_be_satisfied: true
+
+status_rules:
+  executor_may_transition:
+    - ready -> in_progress
+    - in_progress -> blocked
+    - blocked -> in_progress
+    - in_progress -> done
+  executor_must_not_change:
+    - order
+    - authority
+    - dependencies
+    - owner_gate
+    - roadmap_priority
+  done_requires_definition_of_done_and_evidence: true
+  stage_pass_requires_canonical_stage_gate_evidence: true
+
+lease:
+  enabled: true
+  ttl_minutes: 110
+  renew_each_run: true
+  reclaim_after_expiry_only_after_repository_activity_check: true
+  manual_override_blocks_automation: true
+
+company_authority_gate:
+  required_for_automatic_merge: true
+  authority_mode: AM-4
+  position: POS-004
+  principal: AI-ENG-001
+  assignment_id: ASG-POS004-ROADMAP-EXECUTOR-2026-09-14
+  mandatory_review_deadline: "2026-10-16"
+  automatic_merge_counter_limit: 10
+  automatic_merge_counter_must_be_attributably_reconciled: true
+  fail_closed_if_authority_missing_unavailable_revoked_superseded_review_due_or_counter_unknown: true
+  fail_closed_mode: REVIEW
+  product_or_repository_policy_cannot_expand_company_authority: true
+
+authority:
+  AUTO:
+    description: "Low-risk reversible Discovery research, evidence preparation, repository maintenance and implementation already admitted by canonical Work roadmap and higher authority."
+    may:
+      - inspect repository, PR, issue and CI state
+      - search current public web sources for market, competitor, substitute, pricing and task evidence
+      - create privacy-safe research/evidence artifacts from public sources
+      - prepare buyer archetype/prospect seed lists from public organizational information without contacting anyone
+      - draft interview scripts, evidence templates, acceptance templates and experiment preparation
+      - create branches and pull requests
+      - edit non-normative documentation, research artifacts, tests and repository-owned automation state
+      - make bounded reversible technical choices only when explicitly admitted by a queue item
+      - run deterministic tests, diagnostics and cross-review
+      - commit and push changes
+      - update checkpoints and factual roadmap status/evidence when the underlying gate is already satisfied
+      - merge only when the queue item explicitly permits auto_merge and every Company/repository merge gate is satisfied
+  REVIEW:
+    description: "Executor may prepare evidence, drafts, implementation and recommendation, but an authorized human/Owner must pass the final gate."
+  OWNER:
+    description: "Reserved Company/Product decision. Automation may prepare analysis/options only and must never represent the decision as approved."
+  HUMAN:
+    description: "Requires genuine customer/Owner/legal/credentialed/physical action or other non-delegated human evidence."
+
+discovery_boundaries:
+  factual_sync_allowed_when_evidence_exists:
+    - public-source market evidence
+    - competitor/substitute evidence
+    - task/pricing/acceptance examples
+    - repository checkpoints
+    - test and CI evidence
+    - factual roadmap status after a gate is truly satisfied
+  never_synthesize_as_real:
+    - buyer interview
+    - willingness to pay
+    - customer task
+    - customer acceptance
+    - payment or revenue
+    - repeat purchase
+    - legal/professional approval
+    - public-procurement applicability
+  roadmap_sync_must_not:
+    - invent new priority
+    - reorder canonical stages
+    - widen scope
+    - convert interview/public research into buyer-demand PASS
+    - convert internal benchmark success into Business PASS
+    - claim AW-020/AW-030/AW-040/AW-050/AW-060 GO or PASS without exact required evidence
+
+hard_stops:
+  - send customer/prospect outreach or follow-up without an explicitly approved campaign boundary and required access
+  - create or imply price, discount, SLA, warranty, contract, legal/data promise or other material commercial commitment
+  - make payments, purchases, vendor commitments, custody/escrow actions or financial-provider commitments
+  - execute EIS/ETP/public-procurement submissions or claim generic 44-FZ/223-FZ compliance/applicability
+  - fabricate interviews, customer evidence, acceptance, payment, revenue, repeat demand or owner intervention data
+  - build or launch a marketplace, matching engine, custody layer or broad public platform before explicit AW-060 GO and separate scope authority
+  - publish releases or perform production deployment/external side effects without separate authority
+  - access or publish private customer/confidential data outside an explicitly admitted Job/data boundary
+  - create or modify Arvectum OS Product Contracts, Platform Capabilities or Company/Product/OS responsibility by implication
+  - bypass Company AM-4 review, expiry, counter or revocation conditions
+
+blocker_behavior:
+  record_real_blocker: true
+  release_lease_when_waiting_on_human: true
+  continue_with_next_independent_ready_item: true
+  notify_only_if_no_independent_executable_work_remains_or_owner_action_is_time_critical: true
+
+notifications:
+  report_every_run: true
+  audit_issue: 2
+  notify_on:
+    - completed queue item
+    - real customer/human/owner gate required and no independent executable work remains
+    - material safety, security, legal, authority or evidence-integrity blocker
+  routine_progress_goes_to_audit_issue: true
