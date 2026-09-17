@@ -14,49 +14,58 @@ Automated extraction of an `is_archive` boolean proved unreliable on some hh.ru 
 Rules:
 
 - explicit `вакансия в архиве` / `в архиве с ...` => archived;
-- no explicit archive wording on the exact vacancy page => may be treated as current at observation time, subject to normal freshness caveats;
+- absence of explicit archive wording in search extraction is **not sufficient** to prove a vacancy is current; high-value records should be verified on the exact page before being counted as current;
 - search/category pages never count as individual vacancy records;
 - CAPTCHA/blocked pages do not support exact extracted duties or salary unless the public search snippet itself explicitly contains them;
 - aggregator counts are directional only.
 
 ## 2. New current/recent exact records
 
-The following exact vacancy pages add evidence to the leading clusters. Records with explicit archive wording are excluded from the current target but retained as persistence evidence.
+The following exact vacancy pages add evidence to the leading clusters. Records remain provisional as `current/recent` until exact-page status verification is complete; records with explicit archive wording are excluded from the current target and retained as persistence evidence.
 
 | ID | Source | Vacancy | Salary shown | Key atomic work | Status basis |
 |---|---|---|---:|---|---|
-| C052 | hh.ru | Оператор 1С (документооборот) — Мартфарм | 60–70k net | template documents; send/return control; standard correspondence; status tracking | no explicit archive wording observed |
-| C053 | hh.ru | Оператор 1С / сопровождение заказов — Сфера Эстетики | 80k | receive orders; enter in 1C; invoice; shipping docs; marking; delivery/status control | no explicit archive wording observed |
-| C054 | hh.ru | Оператор по вводу данных в 1С — Торговый Дом МАФ | 70–80k | primary docs; inventory moves/writeoffs; registries; accompanying docs | no explicit archive wording observed |
-| C055 | hh.ru | Специалист по НСИ / сопровождению ИС — Ситилаб | 140k gross | maintain dictionaries; map customer nomenclature to unified catalog; update reference data | no explicit archive wording observed |
-| C056 | hh.ru | Специалист по маркировке «Честный знак» — ЛБТ | 80k | product cards; code lifecycle; 1C records; exception handling | no explicit archive wording observed |
-| C057 | hh.ru | Специалист по маркировке — АНАЛИТИКА | salary unknown | goods movement; EDO; reporting; exception/support flow | no explicit archive wording observed |
-| C058 | hh.ru | Специалист по работе с «Честным знаком» — Наос Восток | salary unknown | code order/accounting; docs; EDO; 1C exchange; errors; reports | no explicit archive wording observed |
-| C059 | hh.ru | Младший специалист по маркировке — Лотте КФ Рус | 80–90k | product cards; codes; national catalog; coordination | no explicit archive wording observed |
-| C060 | hh.ru | Модератор карточек товаров — Честный знак.рф | salary unknown | Excel moderation; internet lookup for missing facts; high-volume data review | no explicit archive wording observed |
+| C052 | hh.ru | Оператор 1С (документооборот) — Мартфарм | 60–70k net | template documents; send/return control; standard correspondence; status tracking | current/recent candidate; exact-page archive verification pending |
+| C053 | hh.ru | Оператор 1С / сопровождение заказов — Сфера Эстетики | 80k | receive orders; enter in 1C; invoice; shipping docs; marking; delivery/status control | current/recent candidate; exact-page archive verification pending |
+| C054 | hh.ru | Оператор по вводу данных в 1С — Торговый Дом МАФ | 70–80k | primary docs; inventory moves/writeoffs; registries; accompanying docs | current/recent candidate; exact-page archive verification pending |
+| C055 | hh.ru | Специалист по НСИ / сопровождению ИС — Ситилаб | 140k gross | maintain dictionaries; map customer nomenclature to unified catalog; update reference data | current/recent candidate; exact-page archive verification pending |
+| C056 | hh.ru | Специалист по маркировке «Честный знак» — ЛБТ | 80k | product cards; code lifecycle; 1C records; exception handling | current/recent candidate; exact-page archive verification pending |
+| C057 | hh.ru | Специалист по маркировке — АНАЛИТИКА | salary unknown | goods movement; EDO; reporting; exception/support flow | current/recent candidate; exact-page archive verification pending |
+| C058 | hh.ru | Специалист по работе с «Честным знаком» — Наос Восток | salary unknown | code order/accounting; docs; EDO; 1C exchange; errors; reports | current/recent candidate; exact-page archive verification pending |
+| C059 | hh.ru | Младший специалист по маркировке — Лотте КФ Рус | 80–90k | product cards; codes; national catalog; coordination | current/recent candidate; exact-page archive verification pending |
+
+### Archived workload record — C060
+
+hh.ru vacancy `130253648`, **Модератор карточек товаров — Честный знак.рф**, was re-checked directly on the exact page after this tranche was first written.
+
+The page explicitly states that the vacancy is archived from `2025-10-06`, so it **MUST NOT** count toward the current-vacancy target.
+
+The same exact page nevertheless contains a valuable historical workload statement in the duties: processing up to **40,000 rows per day in Excel**.
+
+Therefore C060 is retained only as **historical workload/persistence evidence** for high-volume product-card moderation.
 
 ## 3. Critical workload evidence
 
-### 3.1 Product-card moderation: `40,000 rows/day`
+### 3.1 Historical product-card moderation: `40,000 rows/day`
 
-One current hh.ru vacancy for a product-card moderator explicitly states work with **40,000 rows per day**.
+The archived hh.ru vacancy `130253648` directly states work with up to **40,000 rows per day**. Exact-page verification confirms that this number belongs to the duties of the role, but the vacancy itself is archived.
 
-This is unusually valuable Discovery evidence because it supplies the missing variable that salary alone cannot provide: actual workload scale.
+This remains unusually useful Discovery evidence because it demonstrates that employers have operated product-card/data-review processes at very large row-level scale.
 
 The function is approximately:
 
 `row/card arrives → validate against rules → enrich missing public facts where allowed → accept/correct/flag → return structured row`
 
-This is closer to the Arvectum Work thesis than a generic employee title because:
+This is relevant to Arvectum Work because:
 
 - unit of work is countable;
 - throughput is explicit;
 - work is highly repetitive;
 - quality rules can potentially be frozen;
 - exceptions can be separated;
-- the customer can buy capacity instead of an employee seat.
+- the customer can potentially buy processing capacity instead of a seat.
 
-This does **not** prove that all 40,000 rows are machine-executable, what accuracy is required, or what employer would pay per row.
+This does **not** prove current 2026 demand at that employer, that all 40,000 rows are machine-executable, what accuracy is required, or what a buyer would pay per row.
 
 ### 3.2 Retail/EDI shipping persistence: `30–50 shipments`
 
@@ -93,7 +102,7 @@ Repeated duties:
 
 `order/request → validate → create/update 1C/ERP record → invoice/UPD/shipping docs → EDO/status monitoring → exception`
 
-Current salary anchors commonly appear in roughly the `60–100k+ RUB/month` range for narrow operational roles, with higher values when procurement/commercial judgment is mixed in.
+Observed salary anchors in the collected vacancy evidence commonly appear in roughly the `60–100k+ RUB/month` range for narrow operational roles, with higher values when procurement/commercial judgment is mixed in.
 
 Main risk: system access and integration cost can erase the apparent labor saving.
 
@@ -107,7 +116,7 @@ The best first pilot should avoid physical picking/packing and take only the dig
 
 ### C1 — Unregulated catalog/master-data operations
 
-**Confidence increased.**
+**Still promising, but the high-volume clue is historical rather than current.**
 
 Examples include:
 
@@ -118,7 +127,7 @@ Examples include:
 - card moderation;
 - reference-data updates.
 
-The `40,000 rows/day` vacancy makes this especially attractive as a machine-work stream because volume is explicit and the work can be priced per accepted row/card/batch.
+The archived `40,000 rows/day` record demonstrates that this class of work can reach industrial scale. Current/recent salary and function evidence from other records still supports the cluster, but a current 2026 workload-volume example remains to be found.
 
 ### C2 — Regulated marking operations
 
@@ -138,19 +147,19 @@ The data-normalization/checking portions may be strong Work candidates. Conseque
 
 ## 6. Revised Discovery priority
 
-The leading candidate set should now be read as:
+The leading candidate set remains:
 
 1. **Order-to-document operations** — broadest repeated labor pattern.
-2. **Unregulated catalog/master-data validation** — strongest newly observed high-volume evidence and likely low-consequence pilot surface.
+2. **Unregulated catalog/master-data validation** — clean per-record commercial unit and evidence of potentially very high historical volume; current workload-volume evidence still needed.
 3. **Warehouse/shipping document closure** — strong deterministic acceptance, but integration/physical-process coupling must be tested.
 
-`Честный знак`/regulated marking becomes a later specialization or a narrowed data-preparation subflow rather than the default form of candidate 2.
+`Честный знак`/regulated marking remains a later specialization or narrowed data-preparation subflow rather than the default form of candidate 2.
 
 This is still a Discovery ordering, not a final product ranking.
 
 ## 7. Commercial implication
 
-The vacancy scan now supports a more precise selling proposition:
+The vacancy scan supports a more precise selling proposition:
 
 > Arvectum Work should not offer «an employee replacement». It should offer a measured processing capacity for a bounded stream: for example, N accepted orders/documents/rows per month, with declared error/exception handling and price per accepted unit or batch.
 
@@ -178,10 +187,11 @@ Do **not** close the task yet.
 
 Still required:
 
+- verify exact-page active/archive status before counting high-value hh.ru records as current;
 - continue exact current-vacancy collection toward the explicit `>=100` criterion;
 - continue salary anchors toward `>=50` reliable records;
 - preserve at least five-source market coverage with explicit accessibility limits;
-- seek more workload-volume evidence, especially orders/documents/rows per day or month;
+- seek current workload-volume evidence, especially orders/documents/rows per day or month;
 - deduplicate exact URLs/employer-role duplicates;
 - refine commercial scenarios using the **automatable slice**, never the full salary as the assumed savings;
 - only after the corpus is sufficient, narrow focused buyer validation to the leading streams.
