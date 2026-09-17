@@ -1,10 +1,10 @@
-version: 1
+version: 2
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T12:52:00Z"
+updated_at: "2026-09-17T15:30:00Z"
 owner_controls_order: true
 
-# Ordered executable projection of the canonical Discovery roadmap. Presence here
-# grants no authority beyond Company/Product governance and the per-item class.
+# Ordered executable projection of the canonical Discovery roadmap.
+# Presence here grants no authority beyond Company/Product governance.
 items:
   - order: 10
     task_id: AW-010-A-MARKET-MAP
@@ -13,152 +13,139 @@ items:
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: primary
-    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-competitors"
-    dependencies: []
-    objective: "Build a dated public-source map of Russian freelance/B2B service marketplaces, AI automation studios, agent platforms and managed-service substitutes relevant to machine-executed outcomes."
-    acceptance_criteria:
-      - "Uses current public sources with source dates and distinguishes fact from hypothesis."
-      - "Covers at least the major substitute categories named by AW-010."
-      - "Records pricing/packaging/acceptance mechanisms where publicly evidenced."
-      - "Does not rank or declare a winning wedge before the full AW-010 gate evidence exists."
-    executor_scope: "May use public web research and write privacy-safe repository research artifacts. No contact with companies or people."
+    roadmap_priority: completed
+    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
+    objective: "Map Russian substitutes and public buying patterns relevant to machine work."
 
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
-    title: "Public paid-task and substitute examples — first tranche"
+    title: "Public paid-task and substitute examples"
     status: done
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: primary
-    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-competitors"
-    dependencies: []
-    objective: "Collect the first 10–15 concrete public examples of paid tasks/services/substitutes across candidate job families, including observable price/packaging and acceptance signals where available."
-    acceptance_criteria:
-      - "At least 10 concrete examples from more than one candidate job family."
-      - "Every example has a source and observation date."
-      - "Unknown price or acceptance remains unknown rather than inferred."
-      - "No example is treated as buyer interview or willingness-to-pay proof for Arvectum Work."
-    executor_scope: "Public-source evidence only; may create structured tables/notes and cross-review them."
+    roadmap_priority: completed
+    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
+    objective: "Collect public pricing/packaging/acceptance examples without treating them as Work demand evidence."
 
   - order: 30
     task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
-    title: "Extend AW-010 to 30+ examples and synthesize patterns"
+    title: "30+ public examples synthesis"
     status: done
     authority: AUTO
     independent: false
     auto_merge: true
-    roadmap_priority: primary
-    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-competitors"
+    roadmap_priority: completed
+    source: "docs/roadmap/ROADMAP.md#aw-010--russian-market-and-substitutes"
     dependencies:
       - AW-010-A-MARKET-MAP
       - AW-010-B-PAID-TASK-SAMPLE
-    objective: "Extend the evidence set to 30+ public examples and summarize observed pricing, packaging, acceptance and Russia-specific constraints without claiming stage GO."
-    acceptance_criteria:
-      - "30+ public task/deal/substitute examples total."
-      - "Observed patterns and counterexamples are separated from interpretation."
-      - "At least two plausible wedges may be identified as hypotheses, not selected as product decisions."
-      - "Unresolved legal/payment questions are explicit."
-    executor_scope: "May synthesize public evidence and prepare an AW-010 decision packet; AW-010 GO/PIVOT/STOP remains REVIEW/Owner-product judgment."
+    objective: "Synthesize public substitute evidence and counterexamples."
 
   - order: 40
     task_id: AW-020-A-BUYER-SEED-LIST
-    title: "Buyer archetype and interview-candidate seed list"
+    title: "Buyer archetype and recruitment seed list"
     status: done
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: parallel
+    roadmap_priority: completed
     source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
-    dependencies: []
-    objective: "Prepare a privacy-safe public-source seed list of organizations/functions matching at least three buyer archetypes for human-led discovery recruitment."
-    acceptance_criteria:
-      - "At least three buyer archetypes are represented."
-      - "Only public organizational/business information is used."
-      - "No personal contact data is unnecessarily copied into the public repository."
-      - "The artifact is a recruitment aid, not evidence of buyer demand."
-    executor_scope: "May research organizations/functions and prepare candidate lists; must not send outreach."
+    objective: "Prepare a privacy-safe public-source recruitment list."
 
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
-    title: "Discovery interview and evidence capture kit"
+    title: "Discovery interview and evidence kit"
     status: done
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: parallel
+    roadmap_priority: completed
     source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
-    dependencies: []
-    objective: "Turn the canonical interview protocol into a reusable interview note template, evidence-strength rubric and privacy-safe task reconstruction form."
+    objective: "Capture recent real work, current method, cost, acceptance and buying path."
+
+  - order: 55
+    task_id: AW-020-C0-FLOW-PROTOTYPE
+    title: "Interview prototype for managed digital work streams"
+    status: ready
+    authority: AUTO
+    independent: true
+    auto_merge: true
+    roadmap_priority: primary
+    source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
+    dependencies:
+      - AW-020-B-INTERVIEW-KIT
+    objective: "Create a concrete low-cost interface prototype that demonstrates management of a recurring digital work stream rather than a prompt/chat experience."
     acceptance_criteria:
-      - "Preserves recent-task reconstruction rather than leading with AI enthusiasm."
-      - "Captures current workaround, cost/price anchor, acceptance owner, recurrence, data constraints and buying path."
-      - "Separates stated opinion from concrete behavior and paid-pilot evidence."
-      - "Contains no fabricated customer evidence."
-    executor_scope: "May create templates/checklists and improve repository documentation only."
+      - "Shows a work-stream dashboard with volume, accepted output, exceptions, latency, quality and cost."
+      - "Shows at least one end-to-end synthetic flow from incoming workload to accepted result."
+      - "Includes a visible comparison against employee + ChatGPT and own automation without claiming Work always wins."
+      - "Includes build-vs-buy economics as a customer decision aid."
+      - "All demo numbers and customer artifacts are clearly marked synthetic."
+      - "No production deployment, public launch, external spend or customer contact."
+    executor_scope: "May create static/clickable local prototype files and interview demo documentation in the repository."
 
   - order: 60
     task_id: AW-020-C-REAL-INTERVIEWS
-    title: "First five real buyer interviews"
-    status: ready
+    title: "First five real buyer/work-stream interviews"
+    status: blocked
     authority: HUMAN
-    independent: true
+    independent: false
     auto_merge: false
     roadmap_priority: evidence_gate
-    source: "docs/discovery/CUSTOMER-DISCOVERY-RU.md"
+    source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
     dependencies:
-      - AW-020-B-INTERVIEW-KIT
-    owner_gate: "Real interviews/outreach require genuine human/customer interaction. AI may prepare drafts but may not invent or send outreach without an explicitly approved campaign."
-    objective: "Obtain the first five genuine buyer/problem interviews and at least five recent-task reconstructions."
-    executor_scope: "Automation may prepare interview packets and later normalize supplied real notes. It cannot synthesize interviews or claim completion without actual evidence."
+      - AW-020-C0-FLOW-PROTOTYPE
+    blocker: "Requires prototype integration plus explicitly authorized outbound campaign and genuine human/customer interaction."
+    owner_gate: "No outreach may be sent until an authorized Principal approves campaign boundaries and sending account/channel."
+    objective: "Obtain first genuine buyer/process interviews and reconstruct real recurring work streams."
+    executor_scope: "Automation may prepare materials and normalize supplied real notes; it cannot invent interviews."
 
   - order: 70
     task_id: AW-020-D-INTERVIEW-SYNTHESIS
-    title: "Synthesize real discovery evidence"
+    title: "Synthesize real work-stream discovery evidence"
     status: blocked
     authority: AUTO
     independent: false
     auto_merge: true
     roadmap_priority: evidence_gate
-    source: "docs/roadmap/ROADMAP.md#aw-020--buyerproblem-discovery"
+    source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
     dependencies:
       - AW-020-C-REAL-INTERVIEWS
-    blocker: "Requires genuine interview notes/evidence from real buyers."
-    objective: "Normalize real interview evidence, identify repeated jobs/acceptance/cost patterns and prepare an AW-020 decision packet without self-approving the stage."
-    executor_scope: "May analyze real supplied evidence and prepare recommendations. AW-020 GO/PIVOT/STOP remains REVIEW."
+    blocker: "Requires genuine interview notes/evidence."
+    objective: "Identify repeated work streams, employee+AI residual burden, acceptance, volume, cost and paid-pilot patterns."
 
   - order: 80
-    task_id: AW-030-ACCEPTANCE-BENCHMARK
-    title: "Leading Job family acceptance benchmark"
+    task_id: AW-030-WORKSTREAM-BENCHMARK
+    title: "Leading work-stream acceptance and substitution benchmark"
     status: blocked
     authority: REVIEW
     independent: false
     auto_merge: false
     roadmap_priority: later
-    source: "docs/roadmap/ROADMAP.md#aw-030--machine-work-task-taxonomy-and-acceptance"
+    source: "docs/roadmap/ROADMAP.md#aw-030--work-stream-contract-acceptance-and-substitution-economics"
     dependencies:
       - AW-020-D-INTERVIEW-SYNTHESIS
-    blocker: "Requires a leading buyer segment/job family selected from real AW-020 evidence."
-    executor_scope: "May prepare benchmark design/options from genuine evidence; cannot select the commercial wedge or claim AW-030 PASS autonomously."
+    blocker: "Requires a leading real buyer segment/work stream selected from AW-020 evidence."
+    objective: "Benchmark Work against manual, employee+AI and own-automation alternatives and freeze acceptance/economics."
 
   - order: 90
-    task_id: AW-040-FIRST-REAL-JOB
-    title: "First real external Worker job"
+    task_id: AW-040-FIRST-REAL-WORKSTREAM
+    title: "First real external work-stream experiment"
     status: blocked
     authority: HUMAN
     independent: false
     auto_merge: false
     roadmap_priority: evidence_gate
-    source: "docs/experiments/AW-040-FIRST-WORKER-PAID-TRANSACTION.md"
+    source: "docs/roadmap/ROADMAP.md#aw-040--first-real-external-work-stream-experiment"
     dependencies:
-      - AW-030-ACCEPTANCE-BENCHMARK
-    blocker: "Requires a genuine external customer/task, price or paid-pilot condition and frozen Acceptance."
-    executor_scope: "May prepare the Job contract, isolated execution plan, instrumentation and evidence pack after genuine inputs exist; cannot manufacture customer/task/acceptance evidence."
+      - AW-030-WORKSTREAM-BENCHMARK
+    blocker: "Requires a real external workload, real volume context, paid-pilot condition and frozen Acceptance."
+    objective: "Execute a real batch/short work stream and measure quality, throughput, exceptions, economics and customer operator burden avoided."
 
   - order: 100
     task_id: AW-050-FIRST-PAID-LOOP
-    title: "First paid end-to-end transaction"
+    title: "First paid machine-work transaction"
     status: blocked
     authority: HUMAN
     independent: false
@@ -166,9 +153,9 @@ items:
     roadmap_priority: evidence_gate
     source: "docs/roadmap/ROADMAP.md#aw-050--first-real-paid-end-to-end-transaction"
     dependencies:
-      - AW-040-FIRST-REAL-JOB
-    blocker: "Requires actual accepted Result and lawful real-money settlement."
-    executor_scope: "May calculate unit economics and preserve privacy-safe evidence after real payment; cannot execute payment or fabricate settlement/revenue."
+      - AW-040-FIRST-REAL-WORKSTREAM
+    blocker: "Requires actual accepted work and lawful real-money settlement."
+    objective: "Measure real revenue, cost per accepted unit/batch, contribution margin and repeat intent."
 
   - order: 110
     task_id: AW-060-GO-PIVOT-STOP
@@ -181,6 +168,6 @@ items:
     source: "docs/roadmap/ROADMAP.md#aw-060--go--pivot--stop"
     dependencies:
       - AW-050-FIRST-PAID-LOOP
-    blocker: "Requires the complete Discovery evidence package and is a Company portfolio/investment decision."
-    owner_gate: "Only attributable Company Owner authority may decide AW-060 Continue/Pivot/Stop and admit AW-100."
-    executor_scope: "May assemble evidence, challenge assumptions and prepare options; must not decide or imply AW-100 admission."
+    blocker: "Requires complete Discovery evidence package."
+    owner_gate: "Only attributable Company Owner authority may decide Continue/Pivot/Stop and admit post-Discovery product build."
+    objective: "Decide whether Work deserves investment and whether the next model is managed service, software control plane or later marketplace."
