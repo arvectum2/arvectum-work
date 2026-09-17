@@ -1,33 +1,34 @@
 version: 1
 repository: arvectum2/arvectum-work
 status: in_progress
-task_id: AW-010-A-MARKET-MAP
-goal: "Build a dated public-source map of Russian substitutes relevant to machine-executed outcomes."
+task_id: AW-010-B-PAID-TASK-SAMPLE
+goal: "Collect the first 10–15 concrete public paid-task/substitute examples across candidate Job families."
 authority: AUTO
 definition_of_done:
-  - "Current public sources with observation date are recorded."
-  - "Major substitute categories from AW-010 are covered."
-  - "Pricing/packaging and acceptance mechanisms are recorded where evidenced."
-  - "Facts are separated from hypotheses and no winning wedge is declared."
+  - "At least 10 concrete examples from more than one candidate Job family."
+  - "Every example has a public source and observation date."
+  - "Price/package/acceptance signals are recorded only where evidenced."
+  - "No offer is treated as buyer interview or Arvectum Work willingness-to-pay proof."
 completed:
   - "AW-000 discovery baseline merged to main at abb2eac224c5bcb15d521f2211498869bf718f6d."
   - "Project Watchdog bootstrap merged to main at be28110b3c54962fea05159c831e19cfd468609c."
-  - "AW-010 market/substitute research artifact created on research/aw-010-market-map."
-current: "Open review-ready PR for AW-010-A; task-level evidence is complete but repository integration is pending."
+  - "AW-010-A market/substitute map merged to main via PR #5 at f94027243386ad2e57aac0e9c5d87dbb85f0452d."
+  - "AW-010-B public paid-task sample created with 15 sourced examples across multiple Job families."
+current: "Open and integrate the review-ready AW-010-B PR; task-level evidence is complete but repository integration is pending."
 pending:
-  - AW-010-B-PAID-TASK-SAMPLE
+  - AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
   - AW-020-A-BUYER-SEED-LIST
   - AW-020-B-INTERVIEW-KIT
-last_verified_commit: "be28110b3c54962fea05159c831e19cfd468609c"
+last_verified_commit: "f94027243386ad2e57aac0e9c5d87dbb85f0452d"
 test_results:
-  - "AW-010-A acceptance criteria reviewed against current public-source artifact: satisfied at task level."
+  - "AW-010-B task-level acceptance reviewed: 15 public examples, multiple Job families, dated sources, no buyer-demand inference."
   - "No AW-010 stage GO/PIVOT/STOP claimed."
-updated_at: "2026-09-17T12:18:00Z"
-resume_instruction: "Reconcile main and this PR. If AW-010-A is integrated, close this task factually and claim the earliest ready AUTO item. If not, do not duplicate the research; advance another independent AUTO item if useful. Never synthesize customer evidence."
+updated_at: "2026-09-17T12:27:00Z"
+resume_instruction: "Reconcile main and the AW-010-B PR. If integrated, mark AW-010-B done and claim AW-010-C. Do not duplicate the sample or synthesize transaction/demand evidence."
 execution:
   claimed_by: project-watchdog
-  execution_id: "manual-first-run-2026-09-17"
-  branch: research/aw-010-market-map
-  base_commit: "be28110b3c54962fea05159c831e19cfd468609c"
-  lease_until: "2026-09-17T14:08:00Z"
+  execution_id: "manual-continue-2026-09-17-aw010b"
+  branch: research/aw-010-paid-task-sample
+  base_commit: "f94027243386ad2e57aac0e9c5d87dbb85f0452d"
+  lease_until: "2026-09-17T14:17:00Z"
   manual_override: false
