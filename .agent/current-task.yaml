@@ -17,9 +17,11 @@ completed:
   - "Product Decision 001: managed machine-work streams accepted."
   - "Product Decision 002: vacancy-first Discovery accepted; broad interviews deferred."
   - "Initial vacancy-function scan merged via PR #16."
-  - "Vacancy corpus tranche 01 prepared: 34 public observations across hh.ru, Rabota.ru, Zarplata.ru and SuperJob."
-  - "Top-3 synthetic commercial scenarios prepared for primary docs/1C, logistics document closure and product/catalog data."
-current: "AW-020-C1 corpus progress: 34/100 observations and 4/5 target public sources represented. Next need additional source(s), exact vacancy-level records, deduplication and volume clues."
+  - "Vacancy corpus tranche 01 merged: 34 public observations across hh.ru, Rabota.ru, Zarplata.ru and SuperJob."
+  - "Top-3 synthetic commercial scenarios merged for primary docs/1C, logistics document closure and product/catalog data."
+  - "Tranche 02 prepared: active September hh.ru vacancy-level sample separated from archived 2026 persistence evidence."
+  - "Eight recurring function clusters are now explicit: primary docs/EDO; orders; warehouse/shipping closure; reconciliations; master data; catalog/marking; logistics/retail EDI; procurement/commercial document subflows."
+current: "AW-020-C1 remains active. Current-vacancy evidence has improved, but the >=100 target is not met. Archived vacancies are persistence evidence only and MUST NOT be counted as current."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -28,18 +30,18 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "453a3446efe2e418fcca96610da7659df7ceafec"
+last_verified_commit: "02a9a2d2603a2b35ff0d14212136ce54f5515b1c"
 test_results:
-  - "First tranche shows repeated paid functions around primary documents/1C, logistics closure, order/data processing, document routing, catalog validation and tender ops."
-  - "Top-3 economics deliberately allow owned automation to beat Work at stable high volume; Work is modeled as the middle-volume/variable-load option."
-  - "Synthetic examples are labeled as modeling only, not price offers or validated payback."
+  - "Current-vacancy records now directly support order-to-document, warehouse/shipping document closure, product/master-data and marking work streams."
+  - "Archived 2026 records repeatedly show the same 1C/EDO/order/reconciliation functions, but are excluded from the current-vacancy count."
+  - "Salary anchors remain role-level evidence only; Work pricing must use the automatable functional slice and workload volume, not the entire role salary."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-17T16:08:00Z"
-resume_instruction: "Continue AW-020-C1. Expand corpus from 34 toward >=100 current observations, add at least one more accessible public source, prefer exact vacancy-level records over broad search counts, deduplicate employers/roles, and capture any volume clues. Update top-3 economics only when new evidence materially changes assumptions. Do not contact employers."
+updated_at: "2026-09-17T17:58:00Z"
+resume_instruction: "Continue AW-020-C1. Prefer active exact vacancy pages published in September 2026; keep archived evidence separate. Expand exact current records across additional accessible sources, deduplicate by vacancy URL/employer/role, capture salary and workload-volume clues, and maintain eight function clusters. Do not close the task until the explicit >=100 current-vacancy and >=50 salary-anchor criteria are genuinely met. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260917-02
-  branch: discovery/aw-020-top3-commercial-scenarios
-  base_commit: "453a3446efe2e418fcca96610da7659df7ceafec"
+  execution_id: AW-020-C1-20260917-03
+  branch: discovery/aw-020-corpus-tranche-02
+  base_commit: "02a9a2d2603a2b35ff0d14212136ce54f5515b1c"
   lease_until: null
   manual_override: true
