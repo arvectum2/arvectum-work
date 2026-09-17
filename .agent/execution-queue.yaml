@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T12:27:00Z"
+updated_at: "2026-09-17T12:34:00Z"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -27,7 +27,7 @@ items:
   - order: 20
     task_id: AW-010-B-PAID-TASK-SAMPLE
     title: "Public paid-task and substitute examples — first tranche"
-    status: in_progress
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
@@ -45,7 +45,7 @@ items:
   - order: 30
     task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
     title: "Extend AW-010 to 30+ examples and synthesize patterns"
-    status: ready
+    status: in_progress
     authority: AUTO
     independent: false
     auto_merge: true
