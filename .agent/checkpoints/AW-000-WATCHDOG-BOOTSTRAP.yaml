@@ -1,0 +1,16 @@
+version: 1
+checkpoint_id: AW-000-WATCHDOG-BOOTSTRAP
+date: "2026-09-17"
+repository: arvectum2/arvectum-work
+status: prepared
+basis:
+  work_main_commit: abb2eac224c5bcb15d521f2211498869bf718f6d
+  company_main_commit: dc1b2a06a80212af1064abaf198d3891836a9c20
+  audit_issue: 2
+  company_am4_renewal: docs/governance/decisions/DECISION-2026-09-16-POS-004-ROADMAP-EXECUTOR-AM4-RENEWAL.md
+result:
+  - "Project Watchdog bound to Arvectum Work Discovery roadmap."
+  - "Initial AUTO work is public-source market/discovery preparation only."
+  - "Real interviews, outreach, paid jobs, settlement and AW-060 remain HUMAN/REVIEW/OWNER gated."
+  - "Automatic merge fails closed unless current Company AM-4 authority and cross-project merge counter are attributable and below the review threshold."
+next_action: "Activate the hourly scheduled Project Watchdog after this bootstrap is integrated to main."
