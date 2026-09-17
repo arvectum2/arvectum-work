@@ -1,6 +1,6 @@
 version: 1
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T12:34:00Z"
+updated_at: "2026-09-17T12:39:00Z"
 owner_controls_order: true
 
 # Ordered executable projection of the canonical Discovery roadmap. Presence here
@@ -45,7 +45,7 @@ items:
   - order: 30
     task_id: AW-010-C-THIRTY-EXAMPLES-SYNTHESIS
     title: "Extend AW-010 to 30+ examples and synthesize patterns"
-    status: in_progress
+    status: done
     authority: AUTO
     independent: false
     auto_merge: true
@@ -83,7 +83,7 @@ items:
   - order: 50
     task_id: AW-020-B-INTERVIEW-KIT
     title: "Discovery interview and evidence capture kit"
-    status: ready
+    status: in_progress
     authority: AUTO
     independent: true
     auto_merge: true
