@@ -27,8 +27,9 @@ completed:
   - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in that pass."
   - "Throughput-cost scan 02 established the first current deterministic salary+throughput anchor for the leading order-to-document stream: Pioner vacancy 136761302, 90-110k RUB/month, 15-20 realizations/day, exact page HTTP 200 with no archive wording. RussKom 136775615 adds a weaker current document-closure pair: from 100k RUB/month and up to 50 returned signed document sets/day. Museum vacancy 135538575 was rejected from current evidence because exact metadata says archived from 2026-09-11."
   - "Conservative current-corpus ledger added: 27/100 current relevant vacancies, 22/50 reliable salary anchors and 8/8 recurring function clusters. Tranche-01 search/index observations are not bulk-counted under the later stricter concrete-current rule; tranche-03 provisional records are not double-counted after tranche-04 verification."
-  - "Tranche 05 promoted six exact current Zarplata.ru detail pages into the strict ledger, five with salary anchors. Gate state is now 33/100 current vacancies, 27/50 salary anchors, 8/8 clusters, and two strict concrete sources: hh.ru + Zarplata.ru."
-current: "AW-020-C1 remains active. Conservative canonical ledger now counts 33/100 current relevant vacancies and 27/50 reliable salary anchors; 8/8 recurring function clusters are supported. Strict concrete current coverage is now hh.ru + Zarplata.ru. Order-to-document/1C+EDO has a current salary+throughput anchor; catalog/master-data still lacks an equivalent current throughput anchor."
+  - "Tranche 05 promoted six exact current Zarplata.ru detail pages into the strict ledger, five with salary anchors. Gate state moved to 33/100 current vacancies, 27/50 salary anchors, 8/8 clusters, and two strict concrete sources: hh.ru + Zarplata.ru."
+  - "Tranche 06 promoted fourteen exact current Rabota.ru detail pages into the strict ledger, all with salary anchors, and explicitly separated machine-work slices from residual human/accountability work. Gate state is now 47/100 current vacancies, 41/50 salary anchors, 8/8 clusters, and three strict concrete sources: hh.ru + Zarplata.ru + Rabota.ru."
+current: "AW-020-C1 remains active. Conservative canonical ledger now counts 47/100 current relevant vacancies and 41/50 reliable salary anchors; 8/8 recurring function clusters are supported. Strict concrete current coverage is now hh.ru + Zarplata.ru + Rabota.ru. Order-to-document/1C+EDO has a current salary+throughput anchor; catalog/master-data still lacks an equivalent current throughput anchor."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -37,7 +38,7 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "5699fe55ee9fd72672bbeccbd6b247c2efc57f83 + zarplata-tranche-05"
+last_verified_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21 + rabota-tranche-06"
 test_results:
   - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
   - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
@@ -47,18 +48,22 @@ test_results:
   - "Pioner vacancy 136761302 is a current exact-page salary+throughput anchor: 90-110k RUB/month, 15-20 realizations/day, 5/2, published 2026-08-31, HTTP 200, no archive wording."
   - "RussKom vacancy 136775615 is current exact-page evidence of up to 50 returned signed primary-document sets/day with salary from 100k RUB/month, but up-to volume and mixed broader duties make it weaker for unit-cost inference."
   - "Museum vacancy 135538575 exposes 10 supplier + 4-6 buyer documents/day and 100-120k RUB/month but is archived from 2026-09-11 and excluded from current evidence."
-  - "Conservative gate state after Zarplata tranche 05 is 33/100 current vacancies and 27/50 current salary anchors; 8/8 recurring function clusters are complete. Strict current concrete sources are hh.ru and Zarplata.ru."
+  - "Conservative gate state after Zarplata tranche 05 was 33/100 current vacancies and 27/50 current salary anchors; 8/8 recurring function clusters are complete. Strict current concrete sources were hh.ru and Zarplata.ru."
+  - "Rabota.ru tranche 06 adds 14 exact detail-page records with publication dates and salary fields, taking the conservative gate to 47/100 current vacancies and 41/50 salary anchors and establishing Rabota.ru as the third strict concrete source."
+  - "Tranche 06 explicitly separates repetitive machine-work slices from communication, ambiguous judgment, access authority and final accountability for every record; vacancy evidence is not treated as proof that the whole role is machine-executable."
+  - "Rabota.ru record with 300+ SKU is portfolio/scope evidence only, not processing throughput; catalog/master-data still lacks a clean current salary+numeric-throughput anchor."
+  - "Intermediary-listed and unusually high-salary operator records remain useful vacancy observations but are marked weaker for buyer/process or cost inference."
   - "Six Zarplata.ru detail pages were live-retrieved with HTTP 200, September 2026 publication dates and no literal archive wording; five expose salary anchors."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-18T10:32:00+03:00"
-resume_instruction: "Continue AW-020-C1 from 33/100 current vacancies, 27/50 salary anchors, 8/8 clusters and two strict sources (hh.ru + Zarplata.ru). Next prioritize concrete current Rabota.ru detail pages to establish a third strict source if accessible, while continuing exact hh/Zarplata records. Seek current catalog/master-data numeric throughput and another independent document throughput anchor. Never infer Work pricing from salary-only data. Do not contact employers."
+updated_at: "2026-09-18T10:45:00+03:00"
+resume_instruction: "Continue AW-020-C1 from 47/100 current vacancies, 41/50 salary anchors, 8/8 clusters and three strict sources (hh.ru + Zarplata.ru + Rabota.ru). Close the remaining 9 salary anchors and 53 current-vacancy records without weakening source quality. Next prioritize concrete current Работа России/trudvsem detail records to establish a fourth strict source if technically accessible, while continuing exact hh/Zarplata/Rabota records. Seek current catalog/master-data numeric throughput and another independent document throughput anchor. Never infer Work pricing from salary-only data. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260918-04
-  branch: research/aw-020-zarplata-exact-tranche
-  base_commit: "5699fe55ee9fd72672bbeccbd6b247c2efc57f83"
+  execution_id: AW-020-C1-20260918-05
+  branch: research/aw-020-rabota-exact-tranche-06
+  base_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21"
   lease_until: null
   manual_override: true
