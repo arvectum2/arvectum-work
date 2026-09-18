@@ -113,6 +113,104 @@ Counted current vacancies: **6**
 
 Salary anchors: **5**
 
+### 2.5 Tranche 06 — exact-page verified Rabota.ru records
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-06.md`
+
+New unique current records from the third strict public source:
+
+| Rabota.ru vacancy | Employer / listing | Salary? |
+|---|---|---|
+| 53732012 | ООО «ИМТЭК» — Оператор 1С | yes |
+| 53653417 | ООО «Альфатранснефть» — Бухгалтер-оператор | yes |
+| 53722270 | Brainbox — Контент-менеджер | yes |
+| 51555925 | ИП Рузавин А. Г. — Контент-менеджер | yes |
+| 46879339 | ИП Степанов М. В. — Оператор ПК / контент-менеджер | yes |
+| 54245470 | ООО «ГУДТРАНС» — Оператор ПК | yes |
+| 54260476 | ООО «АЗАЛИЯ» — Оператор ПК | yes |
+| 54370668 | ООО «ТАНИО» — Оператор ПК | yes |
+| 54396705 | ООО «МА Рейн» via Jobers — Оператор ввода данных | yes |
+| 54404206 | РА ВНТА — Оператор базы данных | yes |
+| 54202752 | ИП Пантелеев А. Р. — Менеджер по маркетплейсам | yes |
+| 54315352 | ИП Садаков С. Н. — Менеджер-аналитик маркетплейсов | yes |
+| 52115774 | ИП Гулянский И. Ю. — Менеджер по маркетплейсам | yes |
+| 54256140 | «Генацвале на Арбате» — Бухгалтер-калькулятор | yes |
+
+Counted current vacancies: **14**
+
+Salary anchors: **14**
+
+Important: tranche 06 explicitly decomposes every record into a machine-work slice and residual human/accountability slice. R012's `300+ SKU` is scope evidence only and is not treated as processing throughput.
+
+### 2.6 Tranche 07 — exact-page verified Своё / svoevagro.ru records
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-07.md`
+
+New unique current records from the fourth strict public detail-page surface:
+
+| svoevagro.ru vacancy | Employer | Salary? |
+|---|---|---|
+| 2137365705 | Азбука Торговли+ — Оператор 1С | yes |
+| 2137186595 | Группа компаний Титан — Оператор 1С | yes |
+| 2136917693 | РУСЛАКТО — Оператор 1С / Оператор ПК | yes |
+| 2136196995 | Эль Парадор — Оператор 1С, ЭДО | yes |
+| 2136764912 | ФУД — Оператор 1С | yes |
+| 2137145053 | Монетный двор универс — Контент-менеджер | yes |
+
+Counted current vacancies: **6**
+
+Salary anchors: **6**
+
+### 2.7 Tranche 08 — additional exact public surfaces
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-08.md`
+
+| Source / vacancy | Employer | Salary? |
+|---|---|---|
+| Dream Job 136888833 | Гильдия — Бухгалтер на первичную документацию | yes |
+| Dream Job 137047080 | ИНГРЕДИКО — Бухгалтер на первичную документацию | yes |
+| Energybase 1142581 | НПО «ПРИБОР» ГАНК — Бухгалтер на первичную документацию | yes |
+
+Counted current vacancies: **3**
+
+Salary anchors: **3**
+
+Source-quality caveat: Dream Job exposes hh.ru résumé integration, so it counts only as a distinct public detail-page surface under the formal source criterion, not as an ownership-independent dataset. Energybase is likewise a public vacancy surface rather than assumed direct-employer evidence.
+
+### 2.8 Tranche 09 — bounded exact Dream Job quantity increment
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-09.md`
+
+New unique exact current records: **14**  
+Salary-bearing: **14**
+
+Dream Job concentration caveat remains mandatory: these observations come from a public surface that exposes hh.ru integration and must not be described as statistically or ownership independent from hh.ru.
+
+One candidate, Dream Job `136987011` (АЛЬФАСТРОЙ), was explicitly rejected because its exact page is marked `[Вакансия в архиве]`.
+
+
+### 2.9 Tranche 10 — exact-page quantity gate closure
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-10.md`
+
+Tranche 10 adds **30 unique exact current records** after explicit cross-surface deduplication:
+
+- 28 hh.ru exact pages;
+- 2 svoevagro.ru exact pages.
+
+hh.ru `137365705` (Азбука Торговли+ / Оператор 1С) was live and relevant but excluded as a duplicate of already-counted svoevagro.ru `2137365705`.
+
+Salary-bearing records: **27**  
+Salary not shown: H003, H024, H026.
+
+Counted current vacancies: **30**  
+Salary anchors: **27**
+
 ## 3. Explicit exclusions from the current counter
 
 ### Tranche 01
@@ -143,16 +241,17 @@ As of 2026-09-18:
 
 | Gate | Required | Conservatively counted | Remaining |
 |---|---:|---:|---:|
-| Current relevant vacancies | 100 | **33** | **67** |
-| Reliable salary anchors on counted current vacancies | 50 | **27** | **23** |
+| Current relevant vacancies | 100 | **100** | **0 — gate satisfied** |
+| Reliable salary anchors on counted current vacancies | 50 | **91** | **0 — gate satisfied** |
 | Recurring function clusters | 8 | **8** | **0** |
-| Current concrete-source coverage | >=5 public sources where accessible | **2 strict sources: hh.ru + Zarplata.ru** | **3 additional source surfaces if accessible** |
+| Current concrete-source coverage | >=5 public sources where accessible | **6 strict public detail-page surfaces: hh.ru + Zarplata.ru + Rabota.ru + svoevagro.ru + Dream Job + Energybase** | **0 — formal gate satisfied** |
 
 Important distinction:
 
 - broader public-source coverage already exists across hh.ru, Rabota.ru, Zarplata.ru, SuperJob and Работа России/trudvsem;
-- strict **current concrete counted records** now exist on hh.ru and Zarplata.ru;
-- Rabota.ru, SuperJob and Работа России/trudvsem still require promotion to concrete current detail-page evidence where technically accessible.
+- strict **current concrete counted records** now exist across six public detail-page surfaces: hh.ru, Zarplata.ru, Rabota.ru, svoevagro.ru, Dream Job and Energybase;
+- source-surface diversity does not imply statistical or ownership independence: Dream Job exposes hh.ru integration, and other surfaces may syndicate vacancy data;
+- SuperJob and Работа России/trudvsem remain useful corroborating surfaces but are not needed to claim the formal >=5 accessible-source gate complete.
 
 Do not claim the five-source current-record gate complete from source-level corroboration alone.
 
@@ -164,11 +263,11 @@ The fastest honest path is not another broad search-summary document. It is a pr
 
 Priorities:
 
-1. promote Rabota.ru concrete current detail pages to establish a third strict source where accessible;
-2. continue exact current Zarplata.ru and hh.ru records to close the quantity and salary gaps;
-3. promote other tranche-01 non-hh observations only after concrete current verification;
-4. keep current throughput anchors separate from salary-only records;
-5. never count an archived or provisional record toward the gate.
+1. quantity, salary-anchor, cluster and source-surface gates are satisfied; do not add records merely to inflate the corpus;
+2. reconcile the per-record machine-work vs residual-human boundary across the older counted tranches;
+3. finalize top-three candidates with explicit uncertainty and preserve employee+AI + owned-automation substitutes;
+4. keep current throughput anchors separate from salary-only records and do not treat portfolio size as throughput;
+5. after C1 completion evidence is integrated, move to focused genuine buyer validation rather than further vacancy accumulation.
 
 ## 6. Evidence boundary
 
