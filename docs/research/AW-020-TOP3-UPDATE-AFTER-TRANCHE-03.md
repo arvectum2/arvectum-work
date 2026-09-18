@@ -98,3 +98,53 @@ Demote when:
 - integration/setup cost is comparable to building owned automation;
 - liability/regulation makes external machine execution unattractive;
 - employee + general AI already removes nearly all operational labor.
+
+
+## 6. Update after throughput-cost corpus 03 — 2026-09-18
+
+New public evidence sharpens candidate 2 without changing the current top-three set.
+
+### Current numeric volume signal
+
+Kadrout vacancy `39101`, dated 2026-09-07, states that the card-check/fill workflow can handle `10 cards/day`.
+
+This is a current numeric throughput phrase, but the compensation text is internally ambiguous: the page says `1 checked category = 800 RUB` while separately referring to `10 cards/day`. The record therefore **does not** establish a clean RUB/card or employee salary+throughput pair.
+
+### Owned-automation substitute becomes concrete
+
+A recent ПравЖизнь technical-content vacancy (published 2026-07-01; original hh window mirrored as ending 2026-08-30) describes an existing `Python + Flask + Excel-generator` plus AI pipeline and a target of:
+
+`25 collections × 1500 cards / 2 months = 37,500 cards / 2 months`
+
+The same description says:
+- the role writes little manually and automates heavily;
+- the pipeline covers content → photo → files → upload;
+- structured data is loaded into 1C / WB / Ozon / Yandex Market;
+- validation includes duplicate articles, field correctness and marketplace requirements;
+- 100+ collections are already in the pipeline.
+
+This is recent historical process/substitute evidence, **not** current accepted throughput, salary evidence or customer proof.
+
+### Implication for candidate 2
+
+Candidate 2 remains attractive because its unit is clean and measurable. But its competitive bar is now higher:
+
+> Arvectum Work must beat the buyer's option of operating an AI-first catalog pipeline, not merely beat manual catalog labor.
+
+The candidate is strongest where:
+- the buyer has recurring or bursty batches but does not want to own the pipeline;
+- schemas/sources vary enough that managed execution has value;
+- Work can provide acceptance/evidence/provenance and bounded exceptions;
+- switching/setup cost stays materially below owned automation.
+
+At very high stable volume, current evidence increases the probability that owned automation is the rational endpoint.
+
+### Ordering
+
+No ordering change is justified yet:
+
+1. Order-to-document / 1C + EDO operations;
+2. Unregulated catalog/master-data validation;
+3. Warehouse/shipping document closure.
+
+Reason: catalog/master-data now has stronger throughput and substitute evidence, but still lacks a clean **current employee salary + numeric processing rate** pair and has not yet been tested against real buyer willingness to outsource.
