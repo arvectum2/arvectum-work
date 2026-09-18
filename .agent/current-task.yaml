@@ -32,7 +32,7 @@ completed:
   - "Tranche 07 promoted six exact current svoevagro.ru records, all salary-bearing, establishing a fourth strict public detail-page source and moving the gate to 53/100 current vacancies and 47/50 salary anchors."
   - "Tranche 08 added two exact current Dream Job records and one exact current Energybase record. The working gate moved to 56/100 current vacancies, 50/50 salary anchors, 8/8 clusters and six strict public detail-page surfaces."
   - "Tranche 09 added fourteen bounded exact current Dream Job records and rejected an explicitly archived candidate despite recent-listing visibility. Working gate is now 70/100 current vacancies and 64/50 salary anchors; 30 current vacancies remain. Dream Job concentration/hh.ru-integration caveat is explicit."
-current: "AW-020-C1 remains active. Working branch ledger counts 70/100 current relevant vacancies and 64/50 reliable salary anchors; 8/8 recurring function clusters and the formal >=5 public-source-surface gate are satisfied across six strict detail-page surfaces. The remaining quantitative gap is 30 current vacancies. Order-to-document/1C+EDO has a current salary+throughput anchor; catalog/master-data still lacks an equivalent current throughput anchor. These increments are pending integration via PR #26."
+current: "AW-020-C1 is evidence-complete on the working branch and pending canonical integration via PR #26. Gates: 100/100 current relevant vacancies, 91/50 salary anchors, 8/8 recurring function clusters, six strict public detail-page surfaces, and 100/100 counted records with explicit machine-work vs residual-human boundaries. Final top three are order-to-document/1C+EDO, unregulated catalog/master-data validation, and warehouse/shipping document closure. This is C1 public-evidence completion only, not AW-020 GO or buyer demand."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -41,7 +41,7 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21 + tranches-06-09 (PR #26 pending)"
+last_verified_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21 + AW-020-C1 completion evidence (PR #26 pending)"
 test_results:
   - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
   - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
@@ -64,14 +64,18 @@ test_results:
   - "Throughput-cost corpus 03 adds a current weak catalog volume signal (Kadrout 39101: up to 10 cards/day) but rejects a RUB/card derivation because compensation wording is internally ambiguous."
   - "Recent ПравЖизнь evidence describes an explicit AI-first Python+Flask+Excel+AI catalog pipeline targeting 25 collections × 1500 cards in two months (37,500 target cards), but the original hh vacancy window ended 2026-08-30; this is recent historical owned-automation substitute evidence, not current throughput or salary evidence."
   - "Top-three ordering remains unchanged; catalog/master-data now has a stronger owned-automation substitute warning and still lacks a clean current employee salary+numeric-throughput pair."
+  - "Tranche 10 closes the quantity gate with 30 unique exact current records after excluding hh 137365705 as a cross-surface duplicate of already-counted svoevagro 2137365705. Working total is 100/100 current vacancies and 91/50 salary anchors."
+  - "Machine-work boundary reconciliation covers all 33 legacy counted records; together with tranches 06-10, 100/100 counted vacancies now explicitly separate machine-executable candidate work from residual human/Principal judgment, communication, authority and accountability."
+  - "AW-020-C1 completion synthesis reconciles the roadmap/queue DoD: 100 current vacancies, 6 source surfaces, 8 clusters, 91 salary anchors, 100/100 scope boundaries, final top-3 and manual/employee+AI/Work/owned-automation comparison for each."
+  - "AW-020-C1 evidence completion does not constitute AW-020 GO, buyer demand, willingness to pay, acceptance, revenue, contribution margin or permission to build a marketplace."
   - "Catalog/master-data still lacks a clean current employee salary+numeric-throughput pair. A current gig page provides a weak 10-cards/day volume phrase, and recent ПравЖизнь evidence provides a strong AI-first owned-automation scale target, but neither closes the strict pair."
   - "Six Zarplata.ru detail pages were live-retrieved with HTTP 200, September 2026 publication dates and no literal archive wording; five expose salary anchors."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-18T11:40:00+03:00"
-resume_instruction: "After PR #26 integration, continue AW-020-C1 from 70/100 current vacancies, 64/50 salary anchors, 8/8 clusters and six strict public detail-page surfaces. The salary and source gates are complete; close the remaining 30 current-vacancy gap without weakening source quality or over-concentrating on one syndicated surface. Prefer exact current records from verified diverse/direct/official sources when available. Keep seeking a current catalog/master-data numeric throughput anchor and another independent document throughput anchor. Never infer Work pricing from salary-only data. Do not contact employers."
+updated_at: "2026-09-19T03:15:00+03:00"
+resume_instruction: "Do not accumulate more vacancies merely to exceed the gate. PR #26 contains evidence-complete AW-020-C1. First reconcile and integrate PR #26 under the applicable Company/repository merge gate. After integration, factually mark AW-020-C1 done and expose AW-020-C2 focused buyer validation as the next HUMAN gate. Do not send outreach until an authorized Principal approves the focused campaign boundary and sending account/channel. Preserve Technical/public-evidence PASS != Business PASS."
 execution:
   claimed_by: project-watchdog/manual-continuation
   execution_id: AW-020-C1-20260918-05
