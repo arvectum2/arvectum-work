@@ -93,6 +93,26 @@ Counted current vacancies: **2**
 
 Salary anchors: **2**
 
+### 2.4 Tranche 05 — exact-page verified Zarplata.ru records
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-05.md`
+
+New unique current records from the second strict public source:
+
+| Zarplata.ru vacancy | Employer | Salary? |
+|---|---|---|
+| 137395562 | Блю Вэйл / Aivel | yes |
+| 136531527 | АКД | yes |
+| 137165696 | Крона | yes |
+| 137010548 | Organic People | yes |
+| 136971852 | MEDIA GLOB | yes |
+| 137486192 | Руссторг | no |
+
+Counted current vacancies: **6**
+
+Salary anchors: **5**
+
 ## 3. Explicit exclusions from the current counter
 
 ### Tranche 01
@@ -123,15 +143,16 @@ As of 2026-09-18:
 
 | Gate | Required | Conservatively counted | Remaining |
 |---|---:|---:|---:|
-| Current relevant vacancies | 100 | **27** | **73** |
-| Reliable salary anchors on counted current vacancies | 50 | **22** | **28** |
+| Current relevant vacancies | 100 | **33** | **67** |
+| Reliable salary anchors on counted current vacancies | 50 | **27** | **23** |
 | Recurring function clusters | 8 | **8** | **0** |
-| Current concrete-source coverage | >=5 public sources where accessible | **1 source at strict counted-record level (hh.ru)** | **source expansion required** |
+| Current concrete-source coverage | >=5 public sources where accessible | **2 strict sources: hh.ru + Zarplata.ru** | **3 additional source surfaces if accessible** |
 
 Important distinction:
 
 - broader public-source coverage already exists across hh.ru, Rabota.ru, Zarplata.ru, SuperJob and Работа России/trudvsem;
-- strict **current concrete counted records** are currently concentrated on hh.ru because other sources have blocking/CAPTCHA/search-only limitations.
+- strict **current concrete counted records** now exist on hh.ru and Zarplata.ru;
+- Rabota.ru, SuperJob and Работа России/trudvsem still require promotion to concrete current detail-page evidence where technically accessible.
 
 Do not claim the five-source current-record gate complete from source-level corroboration alone.
 
@@ -143,9 +164,9 @@ The fastest honest path is not another broad search-summary document. It is a pr
 
 Priorities:
 
-1. promote older tranche-01 non-hh observations when a concrete current page is accessible;
-2. add exact current records from sources other than hh.ru where technically possible;
-3. continue hh.ru exact records to close the quantity and salary gaps;
+1. promote Rabota.ru concrete current detail pages to establish a third strict source where accessible;
+2. continue exact current Zarplata.ru and hh.ru records to close the quantity and salary gaps;
+3. promote other tranche-01 non-hh observations only after concrete current verification;
 4. keep current throughput anchors separate from salary-only records;
 5. never count an archived or provisional record toward the gate.
 
