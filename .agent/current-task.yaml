@@ -61,13 +61,16 @@ test_results:
   - "Energybase adds another exact September 2026 public vacancy surface with a 90k RUB primary-document role."
   - "Working branch gate after tranches 06-08: 56/100 current vacancies, 50/50 salary anchors, 8/8 clusters, six strict public detail-page surfaces. Salary and source-surface gates are satisfied; vacancy quantity remains open."
   - "Tranche 09 adds 14 exact current Dream Job records and explicitly rejects archived vacancy 136987011; working gate becomes 70/100 current vacancies and 64/50 salary anchors. The source-concentration caveat remains mandatory."
-  - "Catalog/master-data still lacks a clean current salary+numeric-throughput pair; catalog role evidence remains salary/scope evidence only."
+  - "Throughput-cost corpus 03 adds a current weak catalog volume signal (Kadrout 39101: up to 10 cards/day) but rejects a RUB/card derivation because compensation wording is internally ambiguous."
+  - "Recent ПравЖизнь evidence describes an explicit AI-first Python+Flask+Excel+AI catalog pipeline targeting 25 collections × 1500 cards in two months (37,500 target cards), but the original hh vacancy window ended 2026-08-30; this is recent historical owned-automation substitute evidence, not current throughput or salary evidence."
+  - "Top-three ordering remains unchanged; catalog/master-data now has a stronger owned-automation substitute warning and still lacks a clean current employee salary+numeric-throughput pair."
+  - "Catalog/master-data still lacks a clean current employee salary+numeric-throughput pair. A current gig page provides a weak 10-cards/day volume phrase, and recent ПравЖизнь evidence provides a strong AI-first owned-automation scale target, but neither closes the strict pair."
   - "Six Zarplata.ru detail pages were live-retrieved with HTTP 200, September 2026 publication dates and no literal archive wording; five expose salary anchors."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-18T11:25:00+03:00"
+updated_at: "2026-09-18T11:40:00+03:00"
 resume_instruction: "After PR #26 integration, continue AW-020-C1 from 70/100 current vacancies, 64/50 salary anchors, 8/8 clusters and six strict public detail-page surfaces. The salary and source gates are complete; close the remaining 30 current-vacancy gap without weakening source quality or over-concentrating on one syndicated surface. Prefer exact current records from verified diverse/direct/official sources when available. Keep seeking a current catalog/master-data numeric throughput anchor and another independent document throughput anchor. Never infer Work pricing from salary-only data. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
