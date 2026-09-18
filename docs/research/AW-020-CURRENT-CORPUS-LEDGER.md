@@ -193,6 +193,24 @@ Dream Job concentration caveat remains mandatory: these observations come from a
 One candidate, Dream Job `136987011` (АЛЬФАСТРОЙ), was explicitly rejected because its exact page is marked `[Вакансия в архиве]`.
 
 
+### 2.9 Tranche 10 — exact-page quantity gate closure
+
+Canonical source:
+`docs/research/AW-020-VACANCY-CORPUS-TRANCHE-10.md`
+
+Tranche 10 adds **30 unique exact current records** after explicit cross-surface deduplication:
+
+- 28 hh.ru exact pages;
+- 2 svoevagro.ru exact pages.
+
+hh.ru `137365705` (Азбука Торговли+ / Оператор 1С) was live and relevant but excluded as a duplicate of already-counted svoevagro.ru `2137365705`.
+
+Salary-bearing records: **27**  
+Salary not shown: H003, H024, H026.
+
+Counted current vacancies: **30**  
+Salary anchors: **27**
+
 ## 3. Explicit exclusions from the current counter
 
 ### Tranche 01
@@ -223,8 +241,8 @@ As of 2026-09-18:
 
 | Gate | Required | Conservatively counted | Remaining |
 |---|---:|---:|---:|
-| Current relevant vacancies | 100 | **70** | **30** |
-| Reliable salary anchors on counted current vacancies | 50 | **64** | **0 — gate satisfied** |
+| Current relevant vacancies | 100 | **100** | **0 — gate satisfied** |
+| Reliable salary anchors on counted current vacancies | 50 | **91** | **0 — gate satisfied** |
 | Recurring function clusters | 8 | **8** | **0** |
 | Current concrete-source coverage | >=5 public sources where accessible | **6 strict public detail-page surfaces: hh.ru + Zarplata.ru + Rabota.ru + svoevagro.ru + Dream Job + Energybase** | **0 — formal gate satisfied** |
 
@@ -245,11 +263,11 @@ The fastest honest path is not another broad search-summary document. It is a pr
 
 Priorities:
 
-1. close the remaining **30 current-vacancy** gap without weakening source-quality rules;
-2. continue exact current records from already-verified surfaces; source count and salary-anchor gates are now satisfied;
-3. keep pursuing Работа России/trudvsem and other direct/official surfaces only when they add evidence quality rather than vanity source count;
+1. quantity, salary-anchor, cluster and source-surface gates are satisfied; do not add records merely to inflate the corpus;
+2. reconcile the per-record machine-work vs residual-human boundary across the older counted tranches;
+3. finalize top-three candidates with explicit uncertainty and preserve employee+AI + owned-automation substitutes;
 4. keep current throughput anchors separate from salary-only records and do not treat portfolio size as throughput;
-5. prioritize a current catalog/master-data numeric throughput anchor and never count archived or provisional records toward the gate.
+5. after C1 completion evidence is integrated, move to focused genuine buyer validation rather than further vacancy accumulation.
 
 ## 6. Evidence boundary
 
