@@ -24,7 +24,8 @@ completed:
   - "Tranche 03 merged via PR #19 with stricter source-quality rules and refined candidate set."
   - "Direct exact-page verification corrected hh.ru vacancy 130253648: the 40,000 rows/day workload statement is valid, but the vacancy is archived from 2025-10-06 and therefore is historical workload evidence only."
   - "Candidate catalog/master-data remains promising, but current 2026 workload-volume evidence is still required."
-current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met. Exact-page status verification is required before high-value hh.ru records count as current."
+  - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in this pass."
+current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met. Public vacancy text is strong for role-cost/function evidence but weak for throughput denominators; cost-per-unit must not be inferred from salary alone."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -33,20 +34,23 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "main-after-pr19"
+last_verified_commit: "main-after-pr21 + throughput-corpus-01"
 test_results:
   - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
   - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
+  - "Mark Formelle vacancy 136890934 is explicitly archived in a public mirror; its ~600 cards/month + 110-140k RUB net salary pair is historical/recent throughput-cost calibration only."
+  - "A current-indexed creative role exposes 5-15 short videos/day and a 75k RUB gross salary anchor, but subjective creative output and unverified exact status make it unsuitable as a primary deterministic Work unit-cost benchmark."
+  - "Current 1C/document/catalog vacancies commonly expose salary but omit numeric orders/documents/cards per day/month; these records cannot produce defensible unit-cost estimates."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-17T21:00:00+03:00"
-resume_instruction: "Continue AW-020-C1. First verify exact-page active/archive status for high-value hh.ru records before counting them as current. Then expand exact current vacancy records and reliable salary anchors; deduplicate by URL/employer/role and seek workload-volume clues. Maintain source-accessibility matrix instead of fabricating equal-quality five-source data. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
+updated_at: "2026-09-18T09:37:00+03:00"
+resume_instruction: "Continue AW-020-C1. Expand exact current vacancy records and reliable salary anchors toward the explicit gates, but keep workload-volume observations as a separate evidence layer. Search direct employer career pages, operational case studies and role postings for numeric digital throughput; do not manufacture a denominator from salary-only vacancies. Verify exact active/archive status before any high-value hh.ru record counts as current. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260917-05
-  branch: fix/aw-020-130253648-archive-correction
-  base_commit: null
+  execution_id: AW-020-C1-20260918-01
+  branch: research/aw-020-throughput-cost-corpus-01
+  base_commit: "871989d5a240bfd0f716573099db8024546400ef"
   lease_until: null
   manual_override: true
