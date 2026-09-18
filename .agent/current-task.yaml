@@ -26,7 +26,8 @@ completed:
   - "Candidate catalog/master-data remains promising, but current 2026 workload-volume evidence is still required."
   - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in that pass."
   - "Throughput-cost scan 02 established the first current deterministic salary+throughput anchor for the leading order-to-document stream: Pioner vacancy 136761302, 90-110k RUB/month, 15-20 realizations/day, exact page HTTP 200 with no archive wording. RussKom 136775615 adds a weaker current document-closure pair: from 100k RUB/month and up to 50 returned signed document sets/day. Museum vacancy 135538575 was rejected from current evidence because exact metadata says archived from 2026-09-11."
-current: "AW-020-C1 remains active. Leading candidate order-to-document/1C+EDO now has a current public salary+throughput anchor: Pioner 90-110k RUB/month and 15-20 realizations/day. This improves benchmarkability but does not prove buyer WTP, automatable share, Work pricing or unit economics. Current-vacancy and salary-anchor gates are still not met; catalog/master-data still lacks an equivalent current throughput anchor."
+  - "Conservative current-corpus ledger added: 27/100 current relevant vacancies, 22/50 reliable salary anchors and 8/8 recurring function clusters. Tranche-01 search/index observations are not bulk-counted under the later stricter concrete-current rule; tranche-03 provisional records are not double-counted after tranche-04 verification."
+current: "AW-020-C1 remains active. Conservative canonical ledger now counts 27/100 current relevant vacancies and 22/50 reliable salary anchors; 8/8 recurring function clusters are already supported. Strict counted current records are still concentrated on hh.ru. Order-to-document/1C+EDO has a current salary+throughput anchor; catalog/master-data still lacks an equivalent current throughput anchor."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -35,7 +36,7 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "4ea80bb9fcdca3187094f4edc61a061648597ff7 + throughput-corpus-02"
+last_verified_commit: "7a5397c82cfbbd32623ad7df5ca39f546e0ab0ed + current-corpus-ledger"
 test_results:
   - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
   - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
@@ -45,12 +46,13 @@ test_results:
   - "Pioner vacancy 136761302 is a current exact-page salary+throughput anchor: 90-110k RUB/month, 15-20 realizations/day, 5/2, published 2026-08-31, HTTP 200, no archive wording."
   - "RussKom vacancy 136775615 is current exact-page evidence of up to 50 returned signed primary-document sets/day with salary from 100k RUB/month, but up-to volume and mixed broader duties make it weaker for unit-cost inference."
   - "Museum vacancy 135538575 exposes 10 supplier + 4-6 buyer documents/day and 100-120k RUB/month but is archived from 2026-09-11 and excluded from current evidence."
+  - "Conservative gate state is 27/100 current vacancies and 22/50 current salary anchors; 8/8 recurring function clusters are complete. Strict current concrete records are presently concentrated on hh.ru despite broader source-level coverage."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-18T10:05:00+03:00"
-resume_instruction: "Continue AW-020-C1. Treat Pioner 136761302 as the first strong current order-to-document throughput anchor, not as Work pricing. Expand exact current vacancy and salary records toward the explicit gates; seek an independent second order/document anchor and a current catalog/master-data throughput anchor. Keep workload-volume evidence separate from salary-only records, verify exact archive status, and never infer cost-per-unit from salary without a defensible denominator. Do not close until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
+updated_at: "2026-09-18T10:18:00+03:00"
+resume_instruction: "Continue AW-020-C1 from the conservative ledger: 27/100 current vacancies, 22/50 reliable salary anchors, 8/8 clusters. Promote only concrete current records after dedupe/status checks. Prioritize non-hh exact current pages to improve strict source coverage, while continuing hh.ru quantity/salary anchors. Seek an independent order/document throughput anchor and a current catalog/master-data throughput anchor. Never infer Work pricing from salary-only data. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
   execution_id: AW-020-C1-20260918-01
