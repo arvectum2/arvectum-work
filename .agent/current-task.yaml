@@ -24,8 +24,9 @@ completed:
   - "Tranche 03 merged via PR #19 with stricter source-quality rules and refined candidate set."
   - "Direct exact-page verification corrected hh.ru vacancy 130253648: the 40,000 rows/day workload statement is valid, but the vacancy is archived from 2025-10-06 and therefore is historical workload evidence only."
   - "Candidate catalog/master-data remains promising, but current 2026 workload-volume evidence is still required."
-  - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in this pass."
-current: "AW-020-C1 remains active. Leading Discovery candidates: order-to-document/1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure. Current-vacancy and salary-anchor targets are not yet met. Public vacancy text is strong for role-cost/function evidence but weak for throughput denominators; cost-per-unit must not be inferred from salary alone."
+  - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in that pass."
+  - "Throughput-cost scan 02 established the first current deterministic salary+throughput anchor for the leading order-to-document stream: Pioner vacancy 136761302, 90-110k RUB/month, 15-20 realizations/day, exact page HTTP 200 with no archive wording. RussKom 136775615 adds a weaker current document-closure pair: from 100k RUB/month and up to 50 returned signed document sets/day. Museum vacancy 135538575 was rejected from current evidence because exact metadata says archived from 2026-09-11."
+current: "AW-020-C1 remains active. Leading candidate order-to-document/1C+EDO now has a current public salary+throughput anchor: Pioner 90-110k RUB/month and 15-20 realizations/day. This improves benchmarkability but does not prove buyer WTP, automatable share, Work pricing or unit economics. Current-vacancy and salary-anchor gates are still not met; catalog/master-data still lacks an equivalent current throughput anchor."
 pending:
   - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
@@ -34,19 +35,22 @@ pending:
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "main-after-pr21 + throughput-corpus-01"
+last_verified_commit: "4ea80bb9fcdca3187094f4edc61a061648597ff7 + throughput-corpus-02"
 test_results:
   - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
   - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
   - "Mark Formelle vacancy 136890934 is explicitly archived in a public mirror; its ~600 cards/month + 110-140k RUB net salary pair is historical/recent throughput-cost calibration only."
   - "A current-indexed creative role exposes 5-15 short videos/day and a 75k RUB gross salary anchor, but subjective creative output and unverified exact status make it unsuitable as a primary deterministic Work unit-cost benchmark."
-  - "Current 1C/document/catalog vacancies commonly expose salary but omit numeric orders/documents/cards per day/month; these records cannot produce defensible unit-cost estimates."
+  - "Current 1C/document/catalog vacancies commonly expose salary but often omit numeric orders/documents/cards per day/month; salary-only records cannot produce defensible unit-cost estimates."
+  - "Pioner vacancy 136761302 is a current exact-page salary+throughput anchor: 90-110k RUB/month, 15-20 realizations/day, 5/2, published 2026-08-31, HTTP 200, no archive wording."
+  - "RussKom vacancy 136775615 is current exact-page evidence of up to 50 returned signed primary-document sets/day with salary from 100k RUB/month, but up-to volume and mixed broader duties make it weaker for unit-cost inference."
+  - "Museum vacancy 135538575 exposes 10 supplier + 4-6 buyer documents/day and 100-120k RUB/month but is archived from 2026-09-11 and excluded from current evidence."
   - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
   - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
   - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
   - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-18T09:37:00+03:00"
-resume_instruction: "Continue AW-020-C1. Expand exact current vacancy records and reliable salary anchors toward the explicit gates, but keep workload-volume observations as a separate evidence layer. Search direct employer career pages, operational case studies and role postings for numeric digital throughput; do not manufacture a denominator from salary-only vacancies. Verify exact active/archive status before any high-value hh.ru record counts as current. Prioritize order-to-document, unregulated catalog/master-data and warehouse/shipping document closure. Do not close the task until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
+updated_at: "2026-09-18T10:05:00+03:00"
+resume_instruction: "Continue AW-020-C1. Treat Pioner 136761302 as the first strong current order-to-document throughput anchor, not as Work pricing. Expand exact current vacancy and salary records toward the explicit gates; seek an independent second order/document anchor and a current catalog/master-data throughput anchor. Keep workload-volume evidence separate from salary-only records, verify exact archive status, and never infer cost-per-unit from salary without a defensible denominator. Do not close until >=100 current relevant vacancies and >=50 reliable salary anchors are genuinely met. Do not contact employers."
 execution:
   claimed_by: project-watchdog/manual-continuation
   execution_id: AW-020-C1-20260918-01
