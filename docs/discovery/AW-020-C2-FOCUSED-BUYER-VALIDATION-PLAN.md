@@ -94,7 +94,7 @@ The selection is intentionally vacancy-derived rather than generic.
 | 2 | Пионер — hh `136761302` | A — order-to-document | current 90–110k role plus explicit `15–20 realizations/day` | Does employee + existing 1C/EDO/AI already make this volume too small for external Work economics? |
 | 3 | Ситилаб — hh `137110041` | B — catalog/master data | current 140k master-data/service-catalog role with structured mapping duties | Are mappings sufficiently deterministic for accepted-result work, or does semantic/domain judgment dominate? |
 | 4 | Brainbox — Rabota `53722270` | B — catalog/content data | current 40–80k role with templated content population/QA | Is this really structured master-data work or mostly editorial/project context that general AI + employee already handles cheaply? |
-| 5 | Лактопур Рус — hh `136896484` | C — warehouse/shipping closure | current 120–150k role; 1C + EDO + ЭТрН + status + discrepancy acts | Is the document layer separable from physical logistics and regulated external-system actions? |
+| 5 | ЗУБР МСК — corpus `C038` | C — warehouse/shipping closure | current 80–120k warehouse-order role; primary docs + receipt/move/write-off records + shipping docs + reports; official ZUBR business feedback route is available | Is the document layer separable from physical warehouse custody and shipment exceptions, or does physical coordination dominate? |
 
 ### Reserve set
 
@@ -102,6 +102,7 @@ Use only if a primary target cannot be reached through an appropriate public cor
 
 - Almali Ceramic — order/document + nomenclature;
 - SIBERIA — primary-document operations;
+- Лактопур Рус — strong 1C/EDO/ЭТрН evidence but no verified official Russian corporate outreach route in the current routing pass; keep as evidence/reserve only until an official route is confirmed;
 - Лемана ПРО Склады — warehouse document flow;
 - ТД МАФ — 1C data entry / primary docs;
 - Aivel / Блю Вэйл — AI-assisted accounting substitute benchmark;
@@ -196,8 +197,8 @@ Before any target is send-ready:
 
 Allowed now:
 
-1. verify official public routing options for the five primary organizations;
-2. prepare stream-specific invitation drafts;
+1. maintain official public routing options for the five primary organizations in `AW-020-C2-TARGET-ROUTING.md`;
+2. maintain stream-specific invitation drafts in `AW-020-C2-INVITATION-DRAFTS.md`;
 3. prepare privacy-safe interview record templates for A/B/C;
 4. record target-routing evidence without personal data;
 5. stop before the first outbound send and surface the exact send-ready batch for Principal approval.
