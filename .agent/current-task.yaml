@@ -1,85 +1,50 @@
 version: 3
 repository: arvectum2/arvectum-work
 status: active
-task_id: AW-020-C1-VACANCY-FUNCTION-CORPUS
-goal: "Build a current Russian vacancy/function corpus and identify the best paid digital work streams for Arvectum Work."
-authority: AUTO
+task_id: AW-020-C2-FOCUSED-BUYER-VALIDATION
+goal: "Run focused human buyer validation against the three vacancy-derived work streams and collect real process evidence that can falsify or support Arvectum Work."
+authority: HUMAN
 definition_of_done:
-  - ">=100 relevant current vacancies across >=5 public sources where accessible."
-  - ">=8 recurring function clusters independent of titles."
-  - "Salary/cost anchors for >=50 records."
-  - "Top 3 work-stream candidates selected with explicit uncertainty."
-  - "For each top candidate: Work service scenario, employee+AI substitute and owned-automation crossover model."
+  - "Complete an initial focused batch of 5 genuine interviews covering all three top work streams."
+  - "Every counted interview reconstructs at least one recent real process and passes AW-020-INTERVIEW-KIT-RU.md quality gate."
+  - "Capture unit/input/output, normal or explicit-unknown volume, current method and AI use, residual human burden, exceptions, acceptance owner/rules, cost/time anchor or unknown, data/security constraints, buying route and owned-automation threshold or unknown."
+  - "Record negative/falsification evidence with the same weight as positive evidence; do not convert opinion into demand."
+  - "Identify any real pilot-safe batch / paid-pilot path if offered by respondents, without creating commitments before separate authority."
 completed:
-  - "AW-000 discovery baseline merged."
-  - "AW-010 public market evidence baseline merged."
-  - "AW-020 interview kit, seed list, synthetic demo and flow-management prototype merged."
-  - "Product Decision 001: managed machine-work streams accepted."
-  - "Product Decision 002: vacancy-first Discovery accepted; broad interviews deferred."
-  - "Initial vacancy-function scan merged via PR #16."
-  - "Vacancy corpus tranche 01 merged: 34 public observations across hh.ru, Rabota.ru, Zarplata.ru and SuperJob."
-  - "Top-3 synthetic commercial scenarios merged."
-  - "Vacancy corpus tranche 02 merged via PR #18; current vs archived evidence separated."
-  - "Eight recurring function clusters are explicit."
-  - "Tranche 03 merged via PR #19 with stricter source-quality rules and refined candidate set."
-  - "Direct exact-page verification corrected hh.ru vacancy 130253648: the 40,000 rows/day workload statement is valid, but the vacancy is archived from 2025-10-06 and therefore is historical workload evidence only."
-  - "Candidate catalog/master-data remains promising, but current 2026 workload-volume evidence is still required."
-  - "Throughput-cost scan 01 separated salary+volume evidence from salary-only vacancy evidence. Mark Formelle vacancy 136890934 exposes 110-140k RUB/month net and ~600 cards/month but is archived, so it is historical calibration only; no clean current exact-status-verified salary+throughput pair for the leading deterministic streams was established in that pass."
-  - "Throughput-cost scan 02 established the first current deterministic salary+throughput anchor for the leading order-to-document stream: Pioner vacancy 136761302, 90-110k RUB/month, 15-20 realizations/day, exact page HTTP 200 with no archive wording. RussKom 136775615 adds a weaker current document-closure pair: from 100k RUB/month and up to 50 returned signed document sets/day. Museum vacancy 135538575 was rejected from current evidence because exact metadata says archived from 2026-09-11."
-  - "Conservative current-corpus ledger added: 27/100 current relevant vacancies, 22/50 reliable salary anchors and 8/8 recurring function clusters. Tranche-01 search/index observations are not bulk-counted under the later stricter concrete-current rule; tranche-03 provisional records are not double-counted after tranche-04 verification."
-  - "Tranche 05 promoted six exact current Zarplata.ru detail pages into the strict ledger, five with salary anchors. Gate state moved to 33/100 current vacancies, 27/50 salary anchors, 8/8 clusters, and two strict concrete sources: hh.ru + Zarplata.ru."
-  - "Tranche 06 promoted fourteen exact current Rabota.ru detail pages into the strict ledger, all with salary anchors, and explicitly separated machine-work slices from residual human/accountability work. Gate state moved to 47/100 current vacancies, 41/50 salary anchors, 8/8 clusters, and three strict concrete sources: hh.ru + Zarplata.ru + Rabota.ru."
-  - "Tranche 07 promoted six exact current svoevagro.ru records, all salary-bearing, establishing a fourth strict public detail-page source and moving the gate to 53/100 current vacancies and 47/50 salary anchors."
-  - "Tranche 08 added two exact current Dream Job records and one exact current Energybase record. The working gate moved to 56/100 current vacancies, 50/50 salary anchors, 8/8 clusters and six strict public detail-page surfaces."
-  - "Tranche 09 added fourteen bounded exact current Dream Job records and rejected an explicitly archived candidate despite recent-listing visibility. Working gate is now 70/100 current vacancies and 64/50 salary anchors; 30 current vacancies remain. Dream Job concentration/hh.ru-integration caveat is explicit."
-current: "AW-020-C1 is evidence-complete on the working branch and pending canonical integration via PR #26. Gates: 100/100 current relevant vacancies, 91/50 salary anchors, 8/8 recurring function clusters, six strict public detail-page surfaces, and 100/100 counted records with explicit machine-work vs residual-human boundaries. Final top three are order-to-document/1C+EDO, unregulated catalog/master-data validation, and warehouse/shipping document closure. This is C1 public-evidence completion only, not AW-020 GO or buyer demand."
+  - "AW-020-C1 merged canonically via PR #26 as commit 9b21645d7f45aa4b3d5b8848b3592628aaf2bcbb."
+  - "C1 gates closed: 100/100 current vacancies, 91/50 salary anchors, 8/8 clusters, 6 strict public detail-page surfaces, 100/100 machine-work vs residual-human boundaries."
+  - "Final top three: order-to-document / 1C+EDO; unregulated catalog/master-data validation; warehouse/shipping document closure."
+  - "C2 focused validation plan prepared from vacancy-derived evidence rather than the older broad seed list."
+  - "First focused batch prepared: Еврозапчасть, Пионер, Ситилаб, Brainbox, ЗУБР."
+  - "Official public business routing surfaces verified for all five primary targets; vacancy application routes are explicitly excluded."
+  - "Stream-specific invitation drafts prepared for A/B/C."
+  - "Stream-specific interview record addenda prepared for A/B/C."
+current: "C2 internal preparation is send-ready, but no outbound is authorized. Five primary targets have official public routing classes, invitation drafts and interview evidence templates. The next irreversible action is the first external message and remains behind the explicit Principal outbound gate."
 pending:
-  - AW-020-C1-VACANCY-FUNCTION-CORPUS
   - AW-020-C2-FOCUSED-BUYER-VALIDATION
   - AW-020-D-DISCOVERY-SYNTHESIS
   - AW-030-WORKSTREAM-BENCHMARK
   - AW-040-FIRST-REAL-WORKSTREAM
   - AW-050-FIRST-PAID-LOOP
   - AW-060-GO-PIVOT-STOP
-last_verified_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21 + AW-020-C1 completion evidence (PR #26 pending)"
+last_verified_commit: "9b21645d7f45aa4b3d5b8848b3592628aaf2bcbb + C2 internal-preparation branch"
 test_results:
-  - "Direct page verification confirms the exact duty text for 40,000 rows/day but also explicit archived status; it is excluded from the current-vacancy count."
-  - "Archive classification must rely on exact-page title/metadata/visible text for records used as current evidence."
-  - "Mark Formelle vacancy 136890934 is explicitly archived in a public mirror; its ~600 cards/month + 110-140k RUB net salary pair is historical/recent throughput-cost calibration only."
-  - "A current-indexed creative role exposes 5-15 short videos/day and a 75k RUB gross salary anchor, but subjective creative output and unverified exact status make it unsuitable as a primary deterministic Work unit-cost benchmark."
-  - "Current 1C/document/catalog vacancies commonly expose salary but often omit numeric orders/documents/cards per day/month; salary-only records cannot produce defensible unit-cost estimates."
-  - "Pioner vacancy 136761302 is a current exact-page salary+throughput anchor: 90-110k RUB/month, 15-20 realizations/day, 5/2, published 2026-08-31, HTTP 200, no archive wording."
-  - "RussKom vacancy 136775615 is current exact-page evidence of up to 50 returned signed primary-document sets/day with salary from 100k RUB/month, but up-to volume and mixed broader duties make it weaker for unit-cost inference."
-  - "Museum vacancy 135538575 exposes 10 supplier + 4-6 buyer documents/day and 100-120k RUB/month but is archived from 2026-09-11 and excluded from current evidence."
-  - "Conservative gate state after Zarplata tranche 05 was 33/100 current vacancies and 27/50 current salary anchors; 8/8 recurring function clusters are complete. Strict current concrete sources were hh.ru and Zarplata.ru."
-  - "Rabota.ru tranche 06 adds 14 exact detail-page records with publication dates and salary fields, taking the conservative gate to 47/100 current vacancies and 41/50 salary anchors and establishing Rabota.ru as the third strict concrete source."
-  - "Tranche 06 explicitly separates repetitive machine-work slices from communication, ambiguous judgment, access authority and final accountability for every record; vacancy evidence is not treated as proof that the whole role is machine-executable."
-  - "Rabota.ru record with 300+ SKU is portfolio/scope evidence only, not processing throughput; catalog/master-data still lacks a clean current salary+numeric-throughput anchor."
-  - "Intermediary-listed and unusually high-salary operator records remain useful vacancy observations but are marked weaker for buyer/process or cost inference."
-  - "Svoevagro tranche 07 adds six exact September-updated detail pages, all salary-bearing, and establishes a fourth strict source surface."
-  - "Dream Job tranche-08 records expose hh.ru resume integration; Dream Job therefore counts as a distinct public detail-page surface but is explicitly not treated as an ownership-independent dataset."
-  - "Energybase adds another exact September 2026 public vacancy surface with a 90k RUB primary-document role."
-  - "Working branch gate after tranches 06-08: 56/100 current vacancies, 50/50 salary anchors, 8/8 clusters, six strict public detail-page surfaces. Salary and source-surface gates are satisfied; vacancy quantity remains open."
-  - "Tranche 09 adds 14 exact current Dream Job records and explicitly rejects archived vacancy 136987011; working gate becomes 70/100 current vacancies and 64/50 salary anchors. The source-concentration caveat remains mandatory."
-  - "Throughput-cost corpus 03 adds a current weak catalog volume signal (Kadrout 39101: up to 10 cards/day) but rejects a RUB/card derivation because compensation wording is internally ambiguous."
-  - "Recent ПравЖизнь evidence describes an explicit AI-first Python+Flask+Excel+AI catalog pipeline targeting 25 collections × 1500 cards in two months (37,500 target cards), but the original hh vacancy window ended 2026-08-30; this is recent historical owned-automation substitute evidence, not current throughput or salary evidence."
-  - "Top-three ordering remains unchanged; catalog/master-data now has a stronger owned-automation substitute warning and still lacks a clean current employee salary+numeric-throughput pair."
-  - "Tranche 10 closes the quantity gate with 30 unique exact current records after excluding hh 137365705 as a cross-surface duplicate of already-counted svoevagro 2137365705. Working total is 100/100 current vacancies and 91/50 salary anchors."
-  - "Machine-work boundary reconciliation covers all 33 legacy counted records; together with tranches 06-10, 100/100 counted vacancies now explicitly separate machine-executable candidate work from residual human/Principal judgment, communication, authority and accountability."
-  - "AW-020-C1 completion synthesis reconciles the roadmap/queue DoD: 100 current vacancies, 6 source surfaces, 8 clusters, 91 salary anchors, 100/100 scope boundaries, final top-3 and manual/employee+AI/Work/owned-automation comparison for each."
-  - "AW-020-C1 evidence completion does not constitute AW-020 GO, buyer demand, willingness to pay, acceptance, revenue, contribution margin or permission to build a marketplace."
-  - "Catalog/master-data still lacks a clean current employee salary+numeric-throughput pair. A current gig page provides a weak 10-cards/day volume phrase, and recent ПравЖизнь evidence provides a strong AI-first owned-automation scale target, but neither closes the strict pair."
-  - "Six Zarplata.ru detail pages were live-retrieved with HTTP 200, September 2026 publication dates and no literal archive wording; five expose salary anchors."
-  - "Trudvsem/Работа России independently corroborates 1C/document/EPD functions, but blocked exact-card scraping is not treated as full structured evidence."
-  - "SuperJob CAPTCHA pages are excluded from new exact-record extraction rather than guessed."
-  - "Salary remains a role-level budget proxy; pricing must use automatable slice, volume and residual customer work."
-  - "No outreach, employer contact, vacancy application or commercial commitment occurred."
-updated_at: "2026-09-19T03:15:00+03:00"
-resume_instruction: "Do not accumulate more vacancies merely to exceed the gate. PR #26 contains evidence-complete AW-020-C1. First reconcile and integrate PR #26 under the applicable Company/repository merge gate. After integration, factually mark AW-020-C1 done and expose AW-020-C2 focused buyer validation as the next HUMAN gate. Do not send outreach until an authorized Principal approves the focused campaign boundary and sending account/channel. Preserve Technical/public-evidence PASS != Business PASS."
+  - "AW-020-C1 completion evidence is now canonical on main."
+  - "Primary C2 batch is vacancy-derived and covers all three final streams."
+  - "Еврозапчасть route: official eurozapchast.com contact surface."
+  - "Пионер route: hh employer 2497841 directly links to pioneercert.ru; exact vacancy address matches the official company address."
+  - "Ситилаб route: official citilab.ru corporate/enterprise surfaces."
+  - "Brainbox route: official brainbox-marketing.ru business contact surface."
+  - "ЗУБР route: official zubr.ru feedback/contact surface."
+  - "Лактопур Рус remains evidence-useful but was removed from the primary send-ready batch because no official Russian corporate route was verified; directory contacts were rejected."
+  - "No vacancy-response channel is used for buyer research."
+  - "No outbound, employer contact, commercial offer, price, NDA, pilot commitment, spend, deployment or payment occurred."
+updated_at: "2026-09-23T19:45:00+03:00"
+resume_instruction: "C2 internal prep is complete. Stop before external outreach until the Principal explicitly approves the exact target batch, sender identity/account, channel, cadence and commitment boundary. After approval, send only the approved initial research invitations, record routing outcomes and interview evidence, and preserve negative signals. Do not use job-application channels."
 execution:
   claimed_by: project-watchdog/manual-continuation
-  execution_id: AW-020-C1-20260918-05
-  branch: research/aw-020-rabota-exact-tranche-06
-  base_commit: "7c1ac2f1b6e6150b49d658fbe645b794ac952f21"
+  execution_id: AW-020-C2-20260923-01
+  branch: discovery/aw-020-c2-focused-buyer-validation
+  base_commit: "9b21645d7f45aa4b3d5b8848b3592628aaf2bcbb"
   lease_until: null
   manual_override: true

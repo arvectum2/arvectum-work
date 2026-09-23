@@ -1,6 +1,6 @@
 version: 3
 repository: arvectum2/arvectum-work
-updated_at: "2026-09-17T15:55:00Z"
+updated_at: "2026-09-23T19:45:00+03:00"
 owner_controls_order: true
 
 items:
@@ -65,11 +65,13 @@ items:
   - order: 57
     task_id: AW-020-C1-VACANCY-FUNCTION-CORPUS
     title: "Russian vacancy/function corpus and automation opportunity map"
-    status: active
+    status: done
     authority: AUTO
     independent: true
     auto_merge: true
-    roadmap_priority: primary
+    roadmap_priority: completed
+    evidence: "docs/research/AW-020-C1-COMPLETION-SYNTHESIS.md"
+    completion_commit: "9b21645d7f45aa4b3d5b8848b3592628aaf2bcbb"
     source: "docs/roadmap/ROADMAP.md#aw-020--buyerwork-stream-discovery"
     dependencies: [AW-020-C0-FLOW-PROTOTYPE]
     objective: "Build a current public corpus of >=100 relevant vacancies, decompose roles into atomic recurring duties, identify top work-stream candidates and model Work vs employee+AI vs owned automation."
@@ -86,14 +88,15 @@ items:
   - order: 60
     task_id: AW-020-C2-FOCUSED-BUYER-VALIDATION
     title: "Focused buyer validation for top vacancy-derived work streams"
-    status: blocked
+    status: active
     authority: HUMAN
     independent: false
     auto_merge: false
     roadmap_priority: evidence_gate
     dependencies: [AW-020-C1-VACANCY-FUNCTION-CORPUS]
-    blocker: "Vacancy/function corpus must first narrow the top work streams and target functions."
-    owner_gate: "Any outbound requires separately approved campaign boundaries and sending account/channel."
+    human_authorization: "Owner instructed to proceed on 2026-09-23; authorization currently covers canonical transition and internal preparation only."
+    execution_scope: "Prepare vacancy-derived target batch, routing evidence, invitations and interview records. Stop before first outbound send."
+    owner_gate: "Any outbound requires separately approved target batch, sender identity/account, channel, cadence and commitment boundary."
 
   - order: 70
     task_id: AW-020-D-DISCOVERY-SYNTHESIS
