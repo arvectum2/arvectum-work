@@ -317,3 +317,8 @@ Not automatically a public marketplace.
 Status: `NOT ADMITTED`.
 
 Consider only if multiple executors/buyers create proven routing, capacity, price/quality competition or liquidity value beyond the managed model.
+
+
+## Spec Kit — candidate linkage (2026-11-20)
+
+[Specification](../../specs/001-discovery-traceability/spec.md) · [Plan](../../specs/001-discovery-traceability/plan.md) · [Integration tasks](../../specs/001-discovery-traceability/tasks.md). Original source, states and authority unchanged; integration tasks are not a competing product roadmap.
